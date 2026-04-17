@@ -496,3 +496,98 @@
   color: var(--text-dim);
 }
 .footer-sep { color: var(--border); }
+
+/* ============================================================
+   CTF TREE
+   ============================================================ */
+.ctf-tree {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.ctf-group {
+  border-radius: 6px;
+  min-width: 120px;
+  padding-right: 1.5rem;
+}
+
+.ctf-group > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.3rem 0.4rem;
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text);
+  user-select: none;
+  transition: background var(--transition);
+}
+.ctf-group > summary::-webkit-details-marker { display: none; }
+.ctf-group > summary:hover { background: var(--surface); }
+
+.ctf-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px; height: 14px;
+  color: var(--accent);
+  font-size: 0.6rem;
+  transition: transform 0.18s ease;
+  flex-shrink: 0;
+}
+.ctf-chevron::before { content: '▶'; }
+.ctf-group[open] > summary .ctf-chevron { transform: rotate(90deg); }
+
+.ctf-group-label { color: var(--accent); }
+
+.ctf-events {
+  list-style: none;
+  padding: 0.1rem 0 0.25rem 1.35rem;
+  margin: 0;
+  border-left: 1px solid var(--border);
+  margin-left: 1.05rem;
+}
+
+.ctf-event {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  position: relative;
+}
+.ctf-event::before {
+  content: '';
+  position: absolute;
+  left: -1.35rem;
+  top: 50%;
+  width: 0.9rem;
+  height: 1px;
+  background: var(--border);
+}
+
+.ctf-year {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.ctf-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  color: #ffc107;
+  font-size: 0.68rem;
+  font-family: var(--sans);
+  font-weight: 500;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+}

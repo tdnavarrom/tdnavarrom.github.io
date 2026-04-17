@@ -14,6 +14,7 @@ const translations = {
     },
     extracurricular: {
       title: 'Extracurricular Activities',
+      thirdPlace: '🥉 3rd Place',
       ctf:    { title: 'CTF Participant',                  desc: 'Participated in NorthSec 2024 & 2025, PolyPwn 2025 & 2026 (3rd place in the 2026 edition), and @HAck 2024 CTFs.' },
       athack: { title: '@Hack CTF Organizer',              desc: 'Helped organize the @Hack CTF event with over 300 participants. Provided support on challenges and guided participants throughout the competition.' },
       gemis:  { title: 'GEMIS Member & Financial Director', desc: 'Organized social events and award shows for 150+ CS students each semester at Universidad EAFIT. Elected Financial Director (Jan–Jul 2021), managing the budget for student events.' }
@@ -86,6 +87,7 @@ const translations = {
     },
     extracurricular: {
       title: 'Actividades Extracurriculares',
+      thirdPlace: '🥉 3er Lugar',
       ctf:    { title: 'Participante en CTFs',                  desc: 'Participé en NorthSec 2024 y 2025, PolyPwn 2025 y 2026 (3er puesto en la edición 2026), y @HAck 2024.' },
       athack: { title: 'Organizador del CTF @Hack',             desc: 'Ayudé a organizar el evento CTF @Hack con más de 300 participantes. Brindé soporte en retos y acompañé a los participantes durante la competencia.' },
       gemis:  { title: 'Miembro de GEMIS y Director Financiero', desc: 'Organicé eventos sociales y premiaciones para más de 150 estudiantes de Sistemas por semestre en la EAFIT. Fui elegido Director Financiero (ene–jul 2021), manejando el presupuesto de los eventos.' }
@@ -158,6 +160,7 @@ const translations = {
     },
     extracurricular: {
       title: 'Activités Parascolaires',
+      thirdPlace: '🥉 3e Place',
       ctf:    { title: 'Participant aux CTFs',                       desc: 'Participation aux CTFs NorthSec 2024 et 2025, PolyPwn 2025 et 2026 (3e place en 2026), et @HAck 2024.' },
       athack: { title: 'Organisateur du CTF @Hack',                  desc: "Contribution à l'organisation du CTF @Hack avec plus de 300 participants. Soutien aux participants sur les challenges tout au long de la compétition." },
       gemis:  { title: 'Membre GEMIS et Directeur Financier',        desc: "Organisation d'événements sociaux et de cérémonies de remise de prix pour 150+ étudiants en informatique par semestre à l'EAFIT. Élu Directeur Financier (jan–juil 2021), gérant le budget des événements étudiants." }
