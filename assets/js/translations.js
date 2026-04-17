@@ -2,14 +2,21 @@ const translations = {
   en: {
     nav: {
       home: 'Home', about: 'About', hobbies: 'Hobbies',
-      experience: 'Experience', education: 'Education', skills: 'Skills',
+      experience: 'Experience', extracurricular: 'Extracurricular', education: 'Education', skills: 'Skills',
       languages: 'Languages', certifications: 'Certificates', contact: 'Contact'
     },
     hero: {
       greeting: "Hi, I'm",
       subtitle: 'Graduate Research Student @ Concordia University<br>Cloud Engineer &nbsp;·&nbsp; AWS &nbsp;·&nbsp; Linux &nbsp;·&nbsp; Cyber Security',
       cta1: 'Get in touch',
-      cta2: 'View experience'
+      cta2: 'View experience',
+      cv: 'Download CV'
+    },
+    extracurricular: {
+      title: 'Extracurricular Activities',
+      ctf:    { title: 'CTF Participant',                  desc: 'Participated in NorthSec 2024 & 2025, PolyPwn 2025 & 2026 (3rd place in the 2026 edition), and @HAck 2024 CTFs.' },
+      athack: { title: '@Hack CTF Organizer',              desc: 'Helped organize the @Hack CTF event with over 300 participants. Provided support on challenges and guided participants throughout the competition.' },
+      gemis:  { title: 'GEMIS Member & Financial Director', desc: 'Organized social events and award shows for 150+ CS students each semester at Universidad EAFIT. Elected Financial Director (Jan–Jul 2021), managing the budget for student events.' }
     },
     about: {
       title: 'About Me',
@@ -67,14 +74,21 @@ const translations = {
   es: {
     nav: {
       home: 'Inicio', about: 'Sobre mí', hobbies: 'Pasatiempos',
-      experience: 'Experiencia', education: 'Educación', skills: 'Habilidades',
+      experience: 'Experiencia', extracurricular: 'Extracurricular', education: 'Educación', skills: 'Habilidades',
       languages: 'Idiomas', certifications: 'Certificados', contact: 'Contacto'
     },
     hero: {
       greeting: '¡Hola, soy',
       subtitle: 'Estudiante de Investigación @ Universidad Concordia<br>Ingeniero de Nube · AWS · Linux · Ciberseguridad',
       cta1: 'Hablemos',
-      cta2: 'Ver experiencia'
+      cta2: 'Ver experiencia',
+      cv: 'Descargar CV'
+    },
+    extracurricular: {
+      title: 'Actividades Extracurriculares',
+      ctf:    { title: 'Participante en CTFs',                  desc: 'Participé en NorthSec 2024 y 2025, PolyPwn 2025 y 2026 (3er puesto en la edición 2026), y @HAck 2024.' },
+      athack: { title: 'Organizador del CTF @Hack',             desc: 'Ayudé a organizar el evento CTF @Hack con más de 300 participantes. Brindé soporte en retos y acompañé a los participantes durante la competencia.' },
+      gemis:  { title: 'Miembro de GEMIS y Director Financiero', desc: 'Organicé eventos sociales y premiaciones para más de 150 estudiantes de Sistemas por semestre en la EAFIT. Fui elegido Director Financiero (ene–jul 2021), manejando el presupuesto de los eventos.' }
     },
     about: {
       title: 'Sobre mí',
@@ -132,14 +146,21 @@ const translations = {
   fr: {
     nav: {
       home: 'Accueil', about: 'À propos', hobbies: 'Loisirs',
-      experience: 'Expérience', education: 'Formation', skills: 'Compétences',
+      experience: 'Expérience', extracurricular: 'Parascolaire', education: 'Formation', skills: 'Compétences',
       languages: 'Langues', certifications: 'Certificats', contact: 'Contact'
     },
     hero: {
       greeting: 'Bonjour, je suis',
       subtitle: 'Étudiant chercheur @ Université Concordia<br>Ingénieur Cloud · AWS · Linux · Cybersécurité',
       cta1: 'Me contacter',
-      cta2: "Voir l'expérience"
+      cta2: "Voir l'expérience",
+      cv: 'Télécharger CV'
+    },
+    extracurricular: {
+      title: 'Activités Parascolaires',
+      ctf:    { title: 'Participant aux CTFs',                       desc: 'Participation aux CTFs NorthSec 2024 et 2025, PolyPwn 2025 et 2026 (3e place en 2026), et @HAck 2024.' },
+      athack: { title: 'Organisateur du CTF @Hack',                  desc: "Contribution à l'organisation du CTF @Hack avec plus de 300 participants. Soutien aux participants sur les challenges tout au long de la compétition." },
+      gemis:  { title: 'Membre GEMIS et Directeur Financier',        desc: "Organisation d'événements sociaux et de cérémonies de remise de prix pour 150+ étudiants en informatique par semestre à l'EAFIT. Élu Directeur Financier (jan–juil 2021), gérant le budget des événements étudiants." }
     },
     about: {
       title: 'À propos',
