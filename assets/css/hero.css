@@ -22,7 +22,7 @@
   color: var(--green);
   letter-spacing: 0.06em;
   margin-bottom: 1.25rem;
-  white-space: nowrap;
+  white-space: nowrap; /* overridden to normal below 600px */
 }
 
 .tag-dot {
