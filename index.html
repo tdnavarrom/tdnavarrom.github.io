@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomás Navarro — Cloud Engineer & Cyber Security Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>TN<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" role="navigation">
+        <a href="#home"           class="nav-link" data-section="home"          data-i18n="nav.home">Home</a>
+        <a href="#about"          class="nav-link" data-section="about"         data-i18n="nav.about">About</a>
+        <a href="#hobbies"        class="nav-link" data-section="hobbies"       data-i18n="nav.hobbies">Hobbies</a>
+        <a href="#experience"     class="nav-link" data-section="experience"    data-i18n="nav.experience">Experience</a>
+        <a href="#education"      class="nav-link" data-section="education"     data-i18n="nav.education">Education</a>
+        <a href="#skills"         class="nav-link" data-section="skills"        data-i18n="nav.skills">Skills</a>
+        <a href="#languages"      class="nav-link" data-section="languages"     data-i18n="nav.languages">Languages</a>
+        <a href="#certifications" class="nav-link" data-section="certifications" data-i18n="nav.certifications">Certifications</a>
+        <a href="#contact"        class="nav-link nav-cta" data-section="contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en" aria-label="English">🇨🇦 EN</button>
+        <button class="lang-btn"        data-lang="es" aria-label="Español">🇨🇴 ES</button>
+        <button class="lang-btn"        data-lang="fr" aria-label="Français">🇫🇷 FR</button>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer" id="drawer">
+    <div class="drawer-lang">
+      <button class="lang-btn active" data-lang="en" aria-label="English">🇨🇦 EN</button>
+      <button class="lang-btn"        data-lang="es" aria-label="Spanish">🇨🇴 ES</button>
+      <button class="lang-btn"        data-lang="fr" aria-label="French">🇫🇷 FR</button>
+    </div>
+    <a href="#home"           class="drawer-link" data-i18n="nav.home">Home</a>
+    <a href="#about"          class="drawer-link" data-i18n="nav.about">About</a>
+    <a href="#hobbies"        class="drawer-link" data-i18n="nav.hobbies">Hobbies</a>
+    <a href="#experience"     class="drawer-link" data-i18n="nav.experience">Experience</a>
+    <a href="#education"      class="drawer-link" data-i18n="nav.education">Education</a>
+    <a href="#skills"         class="drawer-link" data-i18n="nav.skills">Skills</a>
+    <a href="#languages"      class="drawer-link" data-i18n="nav.languages">Languages</a>
+    <a href="#certifications" class="drawer-link" data-i18n="nav.certifications">Certifications</a>
+    <a href="#contact"        class="drawer-link drawer-cta" data-i18n="nav.contact">Contact</a>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">
+        <span class="tag-dot"></span> Montreal, Quebec, Canada &nbsp;·&nbsp; Medellín, Antioquia, Colombia
+      </p>
+      <h1>
+        <span data-i18n="hero.greeting">Hi, I'm</span> <span class="accent">Tomás</span><br />
+        Navarro Múnera
+      </h1>
+      <p class="hero-subtitle" data-i18n-html="hero.subtitle">
+        Graduate Research Student @ Concordia University<br />
+        Cloud Engineer &nbsp;·&nbsp; AWS &nbsp;·&nbsp; Linux &nbsp;·&nbsp; Security
+      </p>
+      <div class="hero-actions">
+        <a href="#contact"    class="btn-primary"   data-i18n="hero.cta1">Get in touch</a>
+        <a href="#experience" class="btn-secondary"  data-i18n="hero.cta2">View experience</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:tomas-navarro@hotmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/tom%C3%A1s-david-navarro-m%C3%BAnera/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/tdnavarrom" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">tomas@concordia ~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <!-- Lines injected by JS for typewriter effect -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about.title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n-html="about.p1">
+            I'm a graduate researcher and cloud engineer based in Montreal. Currently pursuing an
+            <strong>MSc in Information Security</strong> at Concordia University, where I work at the
+            <strong>NSERC/Ericsson Industrial Research Chair in SDN/NFV Security</strong>, developing and
+            evaluating novel security solutions for software-defined networking and network function virtualization.
+          </p>
+          <p data-i18n-html="about.p2">
+            Before joining Concordia, I worked as a <strong>DevOps Engineer at Pyxis</strong>, designing and
+            maintaining cloud-based infrastructures on AWS and Linux. I also completed a
+            <strong>Mitacs Research Internship at Ericsson</strong> working on industry-driven security
+            challenges for telecom and cloud-native networks.
+          </p>
+          <p data-i18n-html="about.p3">
+            Earlier in my career I was a Research Assistant at the <strong>Apolo Scientific Computing Center</strong>
+            at Universidad EAFIT, contributing to energy market research and HPC workloads.
+            I hold a <strong>Bachelor's in Computer Science</strong> from EAFIT, where I received the
+            Premio Desarrollo de Software.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label" data-i18n="about.statExp">Years of experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">MSc</span>
+            <span class="stat-label" data-i18n="about.statSec">Information Security</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5</span>
+            <span class="stat-label" data-i18n="about.statCerts">Certifications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">🏆</span>
+            <span class="stat-label" data-i18n="about.statAward">Premio Desarrollo de Software</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="hobbies.title">Hobbies &amp; Interests</h2>
+      <div class="hobbies-grid">
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">⚽</span>
+          <h4 data-i18n="hobbies.football.name">Football</h4>
+          <p  data-i18n="hobbies.football.desc">Lifelong fan and watcher.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">🎸</span>
+          <h4 data-i18n="hobbies.music.name">Music</h4>
+          <p  data-i18n="hobbies.music.desc">Guitar enthusiast.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">🥊</span>
+          <h4 data-i18n="hobbies.combat.name">Combat Sports</h4>
+          <p  data-i18n="hobbies.combat.desc">Fan of boxing and MMA.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">🥾</span>
+          <h4 data-i18n="hobbies.hiking.name">Hiking</h4>
+          <p  data-i18n="hobbies.hiking.desc">Exploring trails around Montreal and beyond.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">🎮</span>
+          <h4 data-i18n="hobbies.gaming.name">Gaming</h4>
+          <p  data-i18n="hobbies.gaming.desc">Strategy and RPG titles when off the clock.</p>
+        </div>
+
+        <div class="hobby-card">
+          <span class="hobby-emoji">✈️</span>
+          <h4 data-i18n="hobbies.travel.name">Travel</h4>
+          <p  data-i18n="hobbies.travel.desc">Discovering new places and cultures.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-i18n="exp.title">Experience</h2>
+      <div class="exp-filter">
+        <button class="filter-btn active" data-filter="all"      data-i18n="exp.filterAll">All</button>
+        <button class="filter-btn"        data-filter="academic" data-i18n="exp.filterAcademic">Academic</button>
+        <button class="filter-btn"        data-filter="industry" data-i18n="exp.filterIndustry">Industry</button>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-exp-type="academic">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 data-i18n="exp.grad.title">Graduate Research Student</h3>
+                <p class="tl-company">Concordia University · NSERC/Ericsson IRC in SDN/NFV Security</p>
+              </div>
+              <span class="tl-date">May 2023 – Present</span>
+            </div>
+            <p class="tl-desc" data-i18n="exp.grad.desc">
+              Developing and evaluating novel security solutions for software-defined networking and network function
+              virtualization. Contributing to the NSERC/Ericsson Industrial Research Chair focused on securing
+              next-generation network architectures.
+            </p>
+            <div class="tl-tags">
+              <span>SDN</span><span>NFV</span><span>Network Security</span><span>Research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-exp-type="academic">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 data-i18n="exp.mitacs.title">Mitacs Research Intern</h3>
+                <p class="tl-company">Ericsson</p>
+              </div>
+              <span class="tl-date">Sep 2023 – Dec 2023</span>
+            </div>
+            <p class="tl-desc" data-i18n="exp.mitacs.desc">
+              Collaborated with Ericsson researchers on industry-driven security challenges for modern telecom and
+              cloud-native network infrastructure.
+            </p>
+            <div class="tl-tags">
+              <span>Telecom</span><span>Cloud-Native</span><span>Security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-exp-type="industry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 data-i18n="exp.devops.title">DevOps Engineer</h3>
+                <p class="tl-company">Pyxis</p>
+              </div>
+              <span class="tl-date">May 2022 – Mar 2023</span>
+            </div>
+            <p class="tl-desc" data-i18n="exp.devops.desc">
+              Designed, implemented, and maintained cloud-based infrastructures using AWS and Linux. Collaborated with
+              engineers and stakeholders to ensure the quality and security of software products and services.
+            </p>
+            <div class="tl-tags">
+              <span>AWS</span><span>Linux</span><span>DevOps</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-exp-type="industry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 data-i18n="exp.epm.title">Intern — Energy Markets</h3>
+                <p class="tl-company">Empresas Públicas de Medellín (EPM) · Área Gestión Bolsa de Energía</p>
+              </div>
+              <span class="tl-date">Aug 2021 – Feb 2022</span>
+            </div>
+            <p class="tl-desc" data-i18n="exp.epm.desc">
+              Supported the energy markets management area with data analysis and software tooling for
+              electricity market operations.
+            </p>
+            <div class="tl-tags">
+              <span>Energy Markets</span><span>Data Analysis</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-exp-type="academic">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 data-i18n="exp.ra.title">Research Assistant</h3>
+                <p class="tl-company">Universidad EAFIT · Apolo Scientific Computing Center</p>
+              </div>
+              <span class="tl-date">Sep 2019 – Jun 2021</span>
+            </div>
+            <p class="tl-desc" data-i18n="exp.ra.desc">
+              Participated in projects related to energy markets, data analysis, and software development.
+              Contributed to HPC workloads at the Apolo Scientific Computing Center across three consecutive terms.
+            </p>
+            <div class="tl-tags">
+              <span>HPC</span><span>Data Analysis</span><span>Machine Learning</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="edu.title">Education</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <span class="edu-badge" data-i18n="edu.inProgress">In Progress</span>
+            <h3 data-i18n="edu.mscTitle">Master of Science</h3>
+            <p class="edu-field" data-i18n="edu.mscField">Computer &amp; Information Systems Security / Information Assurance</p>
+            <p class="edu-school">Concordia University</p>
+            <p class="edu-date">May 2023 – December 2025</p>
+            <p class="edu-location">Montreal, Quebec, Canada</p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <span class="edu-badge edu-badge-done" data-i18n="edu.graduated">Graduated</span>
+            <h3 data-i18n="edu.bsTitle">Bachelor's Degree</h3>
+            <p class="edu-field" data-i18n="edu.bsField">Computer Science</p>
+            <p class="edu-school">Universidad EAFIT</p>
+            <p class="edu-date">January 2018 – December 2022</p>
+            <p class="edu-location">Medellín, Antioquia, Colombia</p>
+            <p class="edu-award">🏆 Premio Desarrollo de Software</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-i18n="skills.title">Skills &amp; Technologies</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4 data-i18n="skills.cloud">Cloud &amp; Infrastructure</h4>
+          <div class="skill-chips">
+            <span>AWS</span><span>IaaS</span><span>Cloud Computing</span><span>Kubernetes</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 data-i18n="skills.programming">Programming Languages</h4>
+          <div class="skill-chips">
+            <span>Python</span><span>Bash</span><span>SQL</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 data-i18n="skills.frameworks">Frameworks &amp; Tools</h4>
+          <div class="skill-chips">
+            <span>Django</span><span>Linux</span><span>Git</span><span>CI/CD</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 data-i18n="skills.security">Cyber Security &amp; Research</h4>
+          <div class="skill-chips">
+            <span>SDN/NFV Security</span><span>Network Security</span><span>Ethical Hacking</span><span>Forensic Computing</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 data-i18n="skills.data">Data &amp; Machine Learning</h4>
+          <div class="skill-chips">
+            <span>Machine Learning</span><span>Data Analysis</span><span>HPC</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section id="languages" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="languages.title">Languages</h2>
+      <div class="lang-grid">
+
+        <div class="lang-card">
+          <div class="lang-flag-wrap">🇨🇴</div>
+          <div class="lang-details">
+            <div class="lang-top">
+              <span class="lang-name">Español</span>
+              <span class="lang-badge native" data-i18n="languages.nativeBadge">Native</span>
+            </div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:100%"></div></div>
+          </div>
+        </div>
+
+        <div class="lang-card">
+          <div class="lang-flag-wrap">🇨🇦</div>
+          <div class="lang-details">
+            <div class="lang-top">
+              <span class="lang-name">English</span>
+              <span class="lang-badge fluent" data-i18n="languages.fluentBadge">Fluent · C1</span>
+            </div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:90%"></div></div>
+          </div>
+        </div>
+
+        <div class="lang-card">
+          <div class="lang-flag-wrap">🇫🇷</div>
+          <div class="lang-details">
+            <div class="lang-top">
+              <span class="lang-name">Français</span>
+              <span class="lang-badge intermediate" data-i18n="languages.intermediateBadge">Intermediate · B1</span>
+            </div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:55%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-i18n="certs.title">Certifications</h2>
+      <div class="cert-list">
+
+        <div class="cert-item">
+          <div class="cert-icon-wrap cert-cloud">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <div class="cert-body">
+            <p class="cert-name">Ultimate AWS Certified Cloud Practitioner</p>
+            <p class="cert-meta">2023</p>
+          </div>
+          <span class="cert-tag">Cloud</span>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-icon-wrap cert-sec">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="cert-body">
+            <p class="cert-name">Complete Ethical Hacking Bootcamp: Zero to Mastery</p>
+            <p class="cert-meta">2022</p>
+          </div>
+          <span class="cert-tag">Security</span>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-icon-wrap cert-linux">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="cert-body">
+            <p class="cert-name">Administración de Servidores Linux</p>
+            <p class="cert-meta">Linux Administration</p>
+          </div>
+          <span class="cert-tag">Linux</span>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-icon-wrap cert-python">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="cert-body">
+            <p class="cert-name">Desarrollo Backend con Python y Django</p>
+            <p class="cert-meta">Backend Development</p>
+          </div>
+          <span class="cert-tag">Python</span>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-icon-wrap cert-k8s">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="cert-body">
+            <p class="cert-name">Kubernetes for the Absolute Beginners — Hands On</p>
+            <p class="cert-meta">Container Orchestration</p>
+          </div>
+          <span class="cert-tag">K8s</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-container">
+      <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+      <p class="contact-sub" data-i18n="contact.sub">
+        Whether it's a research collaboration, job opportunity, or just to say hello — my inbox is open.
+      </p>
+      <div class="contact-cards">
+
+        <a href="mailto:tomas-navarro@hotmail.com" class="contact-card">
+          <div class="cc-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <p class="cc-label">Email</p>
+            <p class="cc-value">tomas-navarro@hotmail.com</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/tom%C3%A1s-david-navarro-m%C3%BAnera/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="cc-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <p class="cc-label">LinkedIn</p>
+            <p class="cc-value">Tomás David Navarro Múnera</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/tdnavarrom" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="cc-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <div>
+            <p class="cc-label">GitHub</p>
+            <p class="cc-value">tdnavarrom</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 Tomás David Navarro Múnera</span>
+      <span class="footer-sep">·</span>
+      <span data-i18n="footer.built">Built with HTML &amp; CSS</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/experience.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>

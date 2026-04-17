@@ -1,0 +1,29 @@
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 860px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .edu-grid   { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 920px) {
+  .nav-links    { display: none; }
+  .hamburger    { display: flex; }
+  .theme-toggle { margin-left: 0; }
+
+  .hero {
+    flex-direction: column;
+    padding-top: calc(var(--nav-h) + 3rem);
+    gap: 2.5rem;
+  }
+  .hero-visual { width: 100%; }
+  .terminal    { max-width: 100%; }
+
+  .tl-header { flex-direction: column; gap: 0.2rem; }
+  .contact-cards { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .about-stats { grid-template-columns: 1fr 1fr; }
+  .hobbies-grid { grid-template-columns: 1fr 1fr; }
+}
