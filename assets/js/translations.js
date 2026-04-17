@@ -69,7 +69,6 @@ const translations = {
       title: 'Get in Touch',
       sub: "Whether it's a research collaboration, job opportunity, or just to say hello — my inbox is open."
     },
-    footer: { built: 'Built with HTML & CSS' }
   },
 
   es: {
@@ -142,7 +141,6 @@ const translations = {
       title: '¡Hablemos, parce!',
       sub: 'Si querés hablar de investigación, oportunidades laborales o simplemente saludar — mi bandeja está abierta.'
     },
-    footer: { built: 'Hecho con HTML y CSS' }
   },
 
   fr: {
@@ -215,6 +213,5 @@ const translations = {
       title: 'Contactez-moi',
       sub: 'Que ce soit pour une collaboration de recherche, une opportunité professionnelle, ou simplement pour dire bonjour — ma boîte mail est ouverte.'
     },
-    footer: { built: 'Fait avec HTML et CSS' }
   }
 };
