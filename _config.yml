@@ -1,0 +1,16 @@
+title: Tomás Navarro
+description: Cloud Engineer & Cyber Security Researcher
+url: "https://tdnavarrom.github.io"
+baseurl: ""
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/
+  - vendor/
+
+plugins:
+  - jekyll-feed

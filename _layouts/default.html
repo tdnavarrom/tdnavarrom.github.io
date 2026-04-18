@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} — Tomás Navarro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/nav.css" />
+  <link rel="stylesheet" href="/assets/css/blog.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>TN<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" role="navigation">
+        <a href="/#home"            class="nav-link">Home</a>
+        <a href="/#about"           class="nav-link">About</a>
+        <a href="/#experience"      class="nav-link">Experience</a>
+        <a href="/#publications"    class="nav-link">Publications</a>
+        <a href="/#education"       class="nav-link">Education</a>
+        <a href="/#extracurricular" class="nav-link">Volunteer</a>
+        <a href="/#skills"          class="nav-link">Skills</a>
+        <a href="/#certifications"  class="nav-link">Certifications</a>
+        <a href="/blog/"            class="nav-link active">Blog</a>
+        <a href="/#contact"         class="nav-link nav-cta">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer">
+    <a href="/#home"            class="drawer-link">Home</a>
+    <a href="/#about"           class="drawer-link">About</a>
+    <a href="/#experience"      class="drawer-link">Experience</a>
+    <a href="/#publications"    class="drawer-link">Publications</a>
+    <a href="/#education"       class="drawer-link">Education</a>
+    <a href="/#extracurricular" class="drawer-link">Volunteer</a>
+    <a href="/#skills"          class="drawer-link">Skills</a>
+    <a href="/#certifications"  class="drawer-link">Certifications</a>
+    <a href="/blog/"            class="drawer-link">Blog</a>
+    <a href="/#contact"         class="drawer-link drawer-cta">Contact</a>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  {{ content }}
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 Tomás David Navarro Múnera</span>
+      <span class="footer-sep">·</span>
+      <a href="/blog/">Blog</a>
+    </div>
+  </footer>
+
+  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/nav.js"></script>
+</body>
+</html>
