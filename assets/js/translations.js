@@ -8,7 +8,7 @@ const translations = {
   en: {
     nav: {
       home: 'Home', about: 'About', hobbies: 'Hobbies',
-      experience: 'Experience', extracurricular: 'Extracurricular', education: 'Education', skills: 'Skills',
+      experience: 'Experience', publications: 'Publications', extracurricular: 'Extracurricular', education: 'Education', skills: 'Skills',
       languages: 'Languages', certifications: 'Certificates', contact: 'Contact'
     },
     hero: {
@@ -17,6 +17,10 @@ const translations = {
       cta1: 'Get in touch',
       cta2: 'View experience',
       cv: 'Download CV'
+    },
+    pub: {
+      title: 'Publications',
+      acceptance: 'Acceptance ratio: 257 / 1740 ≈ 14.8%'
     },
     extracurricular: {
       title: 'Extracurricular Activities',
@@ -34,9 +38,8 @@ const translations = {
     },
     about: {
       title: 'About Me',
-      p1: "I'm a graduate researcher and cloud engineer based in Montreal. Currently pursuing an <strong>MSc in Information Security</strong> at Concordia University, where I work at the <strong>NSERC/Ericsson Industrial Research Chair in SDN/NFV Security</strong>, developing and evaluating novel security solutions for software-defined networking and network function virtualization.",
-      p2: "Before joining Concordia, I worked as a <strong>DevOps Engineer at Pyxis</strong>, designing and maintaining cloud-based infrastructures on AWS and Linux. I also completed a <strong>Mitacs Research Internship at Ericsson</strong> working on industry-driven security challenges for telecom and cloud-native networks.",
-      p3: "Earlier in my career I was a Research Assistant at the <strong>Apolo Scientific Computing Center</strong> at Universidad EAFIT, contributing to energy market research and HPC workloads. I hold a <strong>Bachelor's in Computer Science</strong> from EAFIT, where I received the Premio Desarrollo de Software.",
+      p1: "I'm a <strong>DevOps and cloud engineer</strong> who loves cybersecurity, based in Montreal. Currently pursuing an <strong>MSc in Information Security</strong> at Concordia University, with research and industry experience at <strong>Ericsson</strong>, <strong>Pyxis</strong>, and <strong>Universidad EAFIT</strong>.",
+      p2: "I love <strong>traveling</strong> and learning about new cultures and languages — especially escaping to <strong>Argentina</strong> and <strong>Brazil</strong>. I also enjoy playing <strong>guitar</strong>, following football and combat sports, hiking, and competing in <strong>CTF</strong> cybersecurity competitions.",
       statExp: 'Years of experience',
       statSec: 'Information Security',
       statCerts: 'Certificates',
@@ -108,7 +111,7 @@ const translations = {
   es: {
     nav: {
       home: 'Inicio', about: 'Sobre mí', hobbies: 'Pasatiempos',
-      experience: 'Experiencia', extracurricular: 'Extracurricular', education: 'Educación', skills: 'Habilidades',
+      experience: 'Experiencia', publications: 'Publicaciones', extracurricular: 'Extracurricular', education: 'Educación', skills: 'Habilidades',
       languages: 'Idiomas', certifications: 'Certificados', contact: 'Contacto'
     },
     hero: {
@@ -117,6 +120,10 @@ const translations = {
       cta1: 'Hablemos',
       cta2: 'Ver experiencia',
       cv: 'Descargar CV'
+    },
+    pub: {
+      title: 'Publicaciones',
+      acceptance: 'Tasa de aceptación: 257 / 1740 ≈ 14.8%'
     },
     extracurricular: {
       title: 'Actividades Extracurriculares',
@@ -134,9 +141,8 @@ const translations = {
     },
     about: {
       title: 'Sobre mí',
-      p1: 'Soy investigador y ingeniero de nube radicado en Montreal, parcero. Actualmente cursando una <strong>Maestría en Seguridad Informática</strong> en la Universidad Concordia, donde trabajo en la <strong>Cátedra Industrial NSERC/Ericsson en Seguridad SDN/NFV</strong>, desarrollando y evaluando soluciones bacanas de seguridad para redes definidas por software y virtualización de funciones de red.',
-      p2: 'Antes de llegar a Concordia, trabajé como <strong>Ingeniero DevOps en Pyxis</strong>, diseñando y manteniendo infraestructuras en la nube con AWS y Linux. También hice una <strong>Pasantía de Investigación Mitacs en Ericsson</strong>, trabajando en retos de seguridad para redes de telecomunicaciones y cloud-native.',
-      p3: 'Más atrás en mi carrera fui Asistente de Investigación en el <strong>Centro de Computación Científica Apolo</strong> de la Universidad EAFIT, contribuyendo a investigación en mercados de energía y cargas HPC. Tengo un <strong>Pregrado en Ciencias de la Computación</strong> de la EAFIT, donde recibí el Premio Desarrollo de Software.',
+      p1: 'Soy <strong>ingeniero DevOps y de nube</strong> apasionado por la ciberseguridad, radicado en Montreal. Actualmente cursando una <strong>Maestría en Seguridad Informática</strong> en la Universidad Concordia, con experiencia en investigación e industria en <strong>Ericsson</strong>, <strong>Pyxis</strong> y la <strong>Universidad EAFIT</strong>.',
+      p2: 'Me encanta <strong>viajar</strong> y aprender sobre nuevas culturas e idiomas — especialmente escaparme a <strong>Argentina</strong> y <strong>Brasil</strong>. También disfruto tocar <strong>guitarra</strong>, seguir el fútbol y los deportes de combate, hacer senderismo y competir en <strong>CTF</strong> de ciberseguridad.',
       statExp: 'Años de experiencia',
       statSec: 'Seguridad Informática',
       statCerts: 'Certificaciones',
@@ -208,7 +214,7 @@ const translations = {
   fr: {
     nav: {
       home: 'Accueil', about: 'À propos', hobbies: 'Loisirs',
-      experience: 'Expérience', extracurricular: 'Parascolaire', education: 'Formation', skills: 'Compétences',
+      experience: 'Expérience', publications: 'Publications', extracurricular: 'Parascolaire', education: 'Formation', skills: 'Compétences',
       languages: 'Langues', certifications: 'Certificats', contact: 'Contact'
     },
     hero: {
@@ -217,6 +223,10 @@ const translations = {
       cta1: 'Me contacter',
       cta2: "Voir l'expérience",
       cv: 'Télécharger CV'
+    },
+    pub: {
+      title: 'Publications',
+      acceptance: "Taux d'acceptation : 257 / 1740 ≈ 14.8%"
     },
     extracurricular: {
       title: 'Activités Parascolaires',
@@ -234,9 +244,8 @@ const translations = {
     },
     about: {
       title: 'À propos',
-      p1: "Je suis chercheur en master et ingénieur cloud basé à Montréal. Je poursuis actuellement une <strong>Maîtrise en Sécurité de l'Information</strong> à l'Université Concordia, où je travaille à la <strong>Chaire de Recherche Industrielle CRSNG/Ericsson en Sécurité SDN/NFV</strong>, développant et évaluant des solutions de sécurité innovantes pour les réseaux définis par logiciel et la virtualisation des fonctions réseau.",
-      p2: "Avant de rejoindre Concordia, j'ai travaillé comme <strong>Ingénieur DevOps chez Pyxis</strong>, concevant et maintenant des infrastructures cloud sur AWS et Linux. J'ai également effectué un <strong>Stage de Recherche Mitacs chez Ericsson</strong>, travaillant sur des défis de sécurité pour les réseaux télécom et cloud-native.",
-      p3: "Plus tôt dans ma carrière, j'étais Assistant de Recherche au <strong>Centre de Calcul Scientifique Apolo</strong> de l'Université EAFIT, contribuant à la recherche sur les marchés de l'énergie et aux charges HPC. Je suis titulaire d'une <strong>Licence en Informatique</strong> de l'EAFIT, où j'ai reçu le Premio Desarrollo de Software.",
+      p1: "Je suis <strong>ingénieur DevOps et cloud</strong> passionné par la cybersécurité, basé à Montréal. Je poursuis une <strong>Maîtrise en Sécurité de l'Information</strong> à l'Université Concordia, avec une expérience en recherche et en industrie chez <strong>Ericsson</strong>, <strong>Pyxis</strong> et à l'<strong>Université EAFIT</strong>.",
+      p2: "J'adore <strong>voyager</strong> et découvrir de nouvelles cultures et langues — surtout m'évader en <strong>Argentine</strong> et au <strong>Brésil</strong>. J'aime aussi jouer de la <strong>guitare</strong>, suivre le football et les sports de combat, randonner, et participer à des <strong>CTF</strong> en cybersécurité.",
       statExp: "Années d'expérience",
       statSec: "Sécurité de l'Information",
       statCerts: 'Certificats',

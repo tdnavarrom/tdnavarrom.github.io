@@ -579,6 +579,80 @@
 }
 
 /* ============================================================
+   PUBLICATIONS
+   ============================================================ */
+.pub-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.pub-card:hover {
+  border-color: var(--accent-dim);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.pub-venue-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--accent);
+  background: var(--accent-glow);
+  border: 1px solid rgba(88,166,255,0.25);
+  border-radius: 4px;
+  padding: 0.18rem 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+}
+
+.pub-authors {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+}
+.pub-authors strong { color: var(--text); font-weight: 600; }
+
+.pub-venue {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin-bottom: 0.4rem;
+}
+
+.pub-acceptance {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+.pub-link:hover { opacity: 0.75; }
+.pub-link svg { width: 0.9rem; height: 0.9rem; }
+
+/* ============================================================
    CONTACT
    ============================================================ */
 .contact-section { background: var(--bg); }
