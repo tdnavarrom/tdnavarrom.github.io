@@ -1,3 +1,9 @@
+/* ================================================================
+   translations.js — All UI strings for EN / ES / FR
+   Used by i18n.js: applyLang() looks up keys via dot-notation paths
+   (e.g. "nav.home", "hero.subtitle") and injects them into the DOM.
+   To add a new language: copy one block, change the key, translate.
+   ================================================================ */
 const translations = {
   en: {
     nav: {
@@ -14,10 +20,17 @@ const translations = {
     },
     extracurricular: {
       title: 'Extracurricular Activities',
-      thirdPlace: '🥉 3rd Place',
-      ctf:    { title: 'CTF Participant',                  desc: 'Participated in NorthSec 2024 & 2025, PolyPwn 2025 & 2026 (3rd place in the 2026 edition), and @HAck 2024 CTFs.' },
-      athack: { title: '@Hack CTF Organizer',              desc: 'Helped organize the @Hack CTF event with over 300 participants. Provided support on challenges and guided participants throughout the competition.' },
-      gemis:  { title: 'GEMIS Member & Financial Director', desc: 'Organized social events and award shows for 150+ CS students each semester at Universidad EAFIT. Elected Financial Director (Jan–Jul 2021), managing the budget for student events.' }
+      thirdPlace: '🥉 3rd',
+      ctf:    { title: 'CTF Participant',
+        b1: 'Participated in NorthSec 2024 and NorthSec 2025 CTFs.',
+        b2: 'Participated in PolyPwn 2025 and 2026 CTF (3rd place in the 2026 edition).',
+        b3: 'Participated in @HAck 2024 CTF.' },
+      athack: { title: '@Hack CTF Organizer',
+        b1: 'Helped organize the @Hack CTF event with over 300 participants.',
+        b2: 'Gave support on challenges and guided participants throughout the competition.' },
+      gemis:  { title: 'GEMIS Member & Financial Director',
+        b1: 'Organized social events and award shows for 150+ CS students each semester at Universidad EAFIT.',
+        b2: 'Elected Financial Director (Jan–Jul 2021), managing the budget for student events and gatherings.' }
     },
     about: {
       title: 'About Me',
@@ -41,11 +54,32 @@ const translations = {
     exp: {
       title: 'Experience',
       filterAll: 'All', filterAcademic: 'Academic', filterIndustry: 'Industry',
-      grad:   { title: 'Graduate Research Student',    desc: 'Developing and evaluating novel security solutions for software-defined networking and network function virtualization. Contributing to the NSERC/Ericsson Industrial Research Chair focused on securing next-generation network architectures.' },
-      mitacs: { title: 'Mitacs Research Intern',       desc: 'Collaborated with Ericsson researchers on industry-driven security challenges for modern telecom and cloud-native network infrastructure.' },
-      devops: { title: 'DevOps Engineer',              desc: 'Designed, implemented, and maintained cloud-based infrastructures using AWS and Linux. Collaborated with engineers and stakeholders to ensure the quality and security of software products and services.' },
-      epm:    { title: 'Intern — Energy Markets',      desc: 'Supported the energy markets management area with data analysis and software tooling for electricity market operations.' },
-      ra:     { title: 'Research Assistant',           desc: 'Participated in projects related to energy markets, data analysis, and software development. Contributed to HPC workloads at the Apolo Scientific Computing Center across three consecutive terms.' }
+      grad:   { title: 'Graduate Research Student',
+        b1: 'Developing and evaluating novel security solutions for SDN and NFV.',
+        b2: 'Contributing to the NSERC/Ericsson Industrial Research Chair in network security.',
+        b3: 'Researching next-generation security architectures for telecom and cloud-native systems.' },
+      mitacs: { title: 'Mitacs Research Intern',
+        b1: 'Used Ansible as an automation tool for deployment of server tools and configuration.',
+        b2: 'Used Docker for testing vulnerabilities and exploits.',
+        b3: 'Used Kubernetes for app deployments and vulnerabilities research.',
+        b4: 'Researched Kernel and 5G vulnerabilities.' },
+      devops: { title: 'DevOps Engineer',
+        b1: 'Used Terraform and Terragrunt for IaaC construction and deployment in AWS.',
+        b2: 'Used Ansible as an automation tool for deployment of server tools and configuration.',
+        b3: 'AWS Networking and Configuration for High Availability and High Scalability.',
+        b4: 'Used Docker for environmental configuration and deployment of applications in AWS.' },
+      epm:    { title: 'Intern — Energy Markets',
+        b1: 'Used Data Science programming languages: Python, Matlab, and R.',
+        b2: 'Built Machine Learning Models for hydrological forecasting.',
+        b3: 'Performed data analysis of model results.',
+        b4: 'Built a web scraping tool to extract data from XM.com.co.',
+        b5: 'Built an API connector tool to fetch and analyse data from XM.com.co.' },
+      ra:     { title: 'Research Assistant',
+        b1: 'Linux System Admin — reviewed packages for vulnerabilities.',
+        b2: 'Deployed private web apps in Docker to secure the cluster.',
+        b3: 'Created "LMOD module generator" script for app usage [Bash].',
+        b4: 'Used Ansible and Vagrant for deployment of server tools and configuration.',
+        b5: 'Installed HPC applications for cluster users.' }
     },
     edu: {
       title: 'Education',
@@ -86,10 +120,17 @@ const translations = {
     },
     extracurricular: {
       title: 'Actividades Extracurriculares',
-      thirdPlace: '🥉 3er Lugar',
-      ctf:    { title: 'Participante en CTFs',                  desc: 'Participé en NorthSec 2024 y 2025, PolyPwn 2025 y 2026 (3er puesto en la edición 2026), y @HAck 2024.' },
-      athack: { title: 'Organizador del CTF @Hack',             desc: 'Ayudé a organizar el evento CTF @Hack con más de 300 participantes. Brindé soporte en retos y acompañé a los participantes durante la competencia.' },
-      gemis:  { title: 'Miembro de GEMIS y Director Financiero', desc: 'Organicé eventos sociales y premiaciones para más de 150 estudiantes de Sistemas por semestre en la EAFIT. Fui elegido Director Financiero (ene–jul 2021), manejando el presupuesto de los eventos.' }
+      thirdPlace: '🥉 3ro',
+      ctf:    { title: 'Participante en CTFs',
+        b1: 'Participé en los CTFs NorthSec 2024 y 2025.',
+        b2: 'Participé en PolyPwn 2025 y 2026 (3er puesto en la edición 2026).',
+        b3: 'Participé en el CTF @HAck 2024.' },
+      athack: { title: 'Organizador del CTF @Hack',
+        b1: 'Ayudé a organizar el evento CTF @Hack con más de 300 participantes.',
+        b2: 'Brindé soporte en retos y acompañé a los participantes durante la competencia.' },
+      gemis:  { title: 'Miembro de GEMIS y Director Financiero',
+        b1: 'Organicé eventos sociales y premiaciones para más de 150 estudiantes de Sistemas por semestre en la EAFIT.',
+        b2: 'Fui elegido Director Financiero (ene–jul 2021), manejando el presupuesto de los eventos estudiantiles.' }
     },
     about: {
       title: 'Sobre mí',
@@ -113,11 +154,32 @@ const translations = {
     exp: {
       title: 'Experiencia',
       filterAll: 'Todos', filterAcademic: 'Académica', filterIndustry: 'Industria',
-      grad:   { title: 'Estudiante de Investigación de Posgrado', desc: "Desarrollando y evaluando soluciones de seguridad para redes SDN y NFV. Contribuyendo a la Cátedra Industrial NSERC/Ericsson enfocada en asegurar arquitecturas de red de siguiente generación." },
-      mitacs: { title: 'Pasante de Investigación Mitacs',         desc: 'Trabajé con investigadores de Ericsson en retos de seguridad para infraestructura de telecomunicaciones y redes cloud-native modernas.' },
-      devops: { title: 'Ingeniero DevOps',                        desc: "Diseñé, implementé y mantuve infraestructuras cloud con AWS y Linux. Colaboré con ingenieros y stakeholders pa' garantizar la calidad y seguridad de productos y servicios de software." },
-      epm:    { title: 'Pasante — Mercados de Energía',           desc: 'Apoyé el área de gestión de mercados de energía con análisis de datos y herramientas de software para operaciones en la bolsa de energía.' },
-      ra:     { title: 'Asistente de Investigación',              desc: 'Participé en proyectos de mercados de energía, análisis de datos y desarrollo de software. Contribuí a cargas HPC en el Centro Apolo durante tres términos seguidos.' }
+      grad:   { title: 'Estudiante de Investigación de Posgrado',
+        b1: 'Desarrollando y evaluando soluciones de seguridad para redes SDN y NFV.',
+        b2: 'Contribuyendo a la Cátedra Industrial NSERC/Ericsson en seguridad de redes.',
+        b3: 'Investigando arquitecturas de seguridad de nueva generación para sistemas cloud-native.' },
+      mitacs: { title: 'Pasante de Investigación Mitacs',
+        b1: 'Uso de Ansible como herramienta de automatización para despliegue de herramientas y configuración de servidores.',
+        b2: 'Uso de Docker para pruebas de vulnerabilidades y exploits.',
+        b3: 'Uso de Kubernetes para despliegues de apps e investigación de vulnerabilidades.',
+        b4: 'Investigación de vulnerabilidades en Kernel y 5G.' },
+      devops: { title: 'Ingeniero DevOps',
+        b1: 'Uso de Terraform y Terragrunt para construcción y despliegue de IaaC en AWS.',
+        b2: 'Uso de Ansible como herramienta de automatización para configuración de servidores.',
+        b3: 'Networking y configuración en AWS para Alta Disponibilidad y Alta Escalabilidad.',
+        b4: 'Uso de Docker para configuración de entornos y despliegue de aplicaciones en AWS.' },
+      epm:    { title: 'Pasante — Mercados de Energía',
+        b1: 'Uso de lenguajes de ciencia de datos: Python, Matlab y R.',
+        b2: 'Construcción de modelos de Machine Learning para pronóstico hidrológico.',
+        b3: 'Análisis de datos de los resultados de los modelos.',
+        b4: 'Desarrollo de herramienta de web scraping para extraer datos de XM.com.co.',
+        b5: 'Desarrollo de conector API para obtener y analizar datos de XM.com.co.' },
+      ra:     { title: 'Asistente de Investigación',
+        b1: 'Administración de sistemas Linux — revisión de paquetes para vulnerabilidades.',
+        b2: 'Despliegue de aplicaciones web privadas en Docker para asegurar el clúster.',
+        b3: 'Creación del script "LMOD module generator" para uso de apps en Bash.',
+        b4: 'Uso de Ansible y Vagrant para despliegue de herramientas y configuración de servidores.',
+        b5: 'Instalación de aplicaciones HPC para usuarios del clúster.' }
     },
     edu: {
       title: 'Educación',
@@ -158,10 +220,17 @@ const translations = {
     },
     extracurricular: {
       title: 'Activités Parascolaires',
-      thirdPlace: '🥉 3e Place',
-      ctf:    { title: 'Participant aux CTFs',                       desc: 'Participation aux CTFs NorthSec 2024 et 2025, PolyPwn 2025 et 2026 (3e place en 2026), et @HAck 2024.' },
-      athack: { title: 'Organisateur du CTF @Hack',                  desc: "Contribution à l'organisation du CTF @Hack avec plus de 300 participants. Soutien aux participants sur les challenges tout au long de la compétition." },
-      gemis:  { title: 'Membre GEMIS et Directeur Financier',        desc: "Organisation d'événements sociaux et de cérémonies de remise de prix pour 150+ étudiants en informatique par semestre à l'EAFIT. Élu Directeur Financier (jan–juil 2021), gérant le budget des événements étudiants." }
+      thirdPlace: '🥉 3e',
+      ctf:    { title: 'Participant aux CTFs',
+        b1: 'Participation aux CTFs NorthSec 2024 et 2025.',
+        b2: 'Participation à PolyPwn 2025 et 2026 (3e place en 2026).',
+        b3: 'Participation au CTF @HAck 2024.' },
+      athack: { title: 'Organisateur du CTF @Hack',
+        b1: "Contribution à l'organisation du CTF @Hack avec plus de 300 participants.",
+        b2: 'Soutien aux participants sur les challenges tout au long de la compétition.' },
+      gemis:  { title: 'Membre GEMIS et Directeur Financier',
+        b1: "Organisation d'événements sociaux et de cérémonies de remise de prix pour 150+ étudiants en informatique par semestre à l'EAFIT.",
+        b2: 'Élu Directeur Financier (jan–juil 2021), gérant le budget des événements étudiants.' }
     },
     about: {
       title: 'À propos',
@@ -185,11 +254,32 @@ const translations = {
     exp: {
       title: 'Expérience',
       filterAll: 'Tous', filterAcademic: 'Académique', filterIndustry: 'Industrie',
-      grad:   { title: 'Étudiant chercheur en master',       desc: "Développement et évaluation de solutions de sécurité innovantes pour les réseaux SDN et NFV. Contribution à la Chaire de Recherche Industrielle NSERC/Ericsson axée sur la sécurisation des architectures réseau de nouvelle génération." },
-      mitacs: { title: 'Stagiaire de Recherche Mitacs',      desc: "Collaboration avec des chercheurs d'Ericsson sur des défis de sécurité pour les infrastructures télécom modernes et les réseaux cloud-native." },
-      devops: { title: 'Ingénieur DevOps',                   desc: "Conception, implémentation et maintenance d'infrastructures cloud avec AWS et Linux. Collaboration avec des ingénieurs et parties prenantes pour garantir la qualité et la sécurité des produits logiciels." },
-      epm:    { title: "Stagiaire — Marchés de l'Énergie",   desc: "Soutien à la gestion des marchés de l'énergie avec l'analyse de données et des outils logiciels pour les opérations du marché de l'électricité." },
-      ra:     { title: 'Assistant de Recherche',             desc: "Participation à des projets liés aux marchés de l'énergie, à l'analyse de données et au développement logiciel. Contribution aux charges HPC au Centre Apolo pendant trois trimestres consécutifs." }
+      grad:   { title: 'Étudiant chercheur en master',
+        b1: 'Développement et évaluation de solutions de sécurité innovantes pour les réseaux SDN et NFV.',
+        b2: 'Contribution à la Chaire de Recherche Industrielle NSERC/Ericsson en sécurité réseau.',
+        b3: "Recherche d'architectures de sécurité de nouvelle génération pour les systèmes cloud-native." },
+      mitacs: { title: 'Stagiaire de Recherche Mitacs',
+        b1: "Utilisation d'Ansible comme outil d'automatisation pour le déploiement d'outils serveur.",
+        b2: 'Utilisation de Docker pour tester des vulnérabilités et des exploits.',
+        b3: "Utilisation de Kubernetes pour le déploiement d'applications et la recherche de vulnérabilités.",
+        b4: 'Recherche de vulnérabilités dans le Kernel et la 5G.' },
+      devops: { title: 'Ingénieur DevOps',
+        b1: 'Utilisation de Terraform et Terragrunt pour la construction et le déploiement IaaC dans AWS.',
+        b2: "Utilisation d'Ansible pour l'automatisation du déploiement d'outils et de la configuration.",
+        b3: 'Configuration réseau AWS pour Haute Disponibilité et Haute Scalabilité.',
+        b4: "Utilisation de Docker pour la configuration d'environnements et le déploiement dans AWS." },
+      epm:    { title: "Stagiaire — Marchés de l'Énergie",
+        b1: 'Utilisation de langages de science des données : Python, Matlab et R.',
+        b2: "Construction de modèles de Machine Learning pour la prévision hydrologique.",
+        b3: 'Analyse des données des résultats des modèles.',
+        b4: "Développement d'un outil de web scraping pour extraire des données de XM.com.co.",
+        b5: "Développement d'un connecteur API pour récupérer et analyser les données de XM.com.co." },
+      ra:     { title: 'Assistant de Recherche',
+        b1: 'Administration système Linux — audit de paquets pour les vulnérabilités.',
+        b2: 'Déploiement de web apps privées sous Docker pour sécuriser le cluster.',
+        b3: 'Création du script "LMOD module generator" pour l\'usage d\'applications [Bash].',
+        b4: "Utilisation d'Ansible et Vagrant pour le déploiement d'outils serveur et la configuration.",
+        b5: 'Installation des applications HPC pour les utilisateurs du cluster.' }
     },
     edu: {
       title: 'Formation',

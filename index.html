@@ -27,10 +27,9 @@
         <a href="#about"          class="nav-link" data-section="about"         data-i18n="nav.about">About</a>
         <a href="#hobbies"        class="nav-link" data-section="hobbies"       data-i18n="nav.hobbies">Hobbies</a>
         <a href="#experience"     class="nav-link" data-section="experience"    data-i18n="nav.experience">Experience</a>
-        <a href="#extracurricular"      class="nav-link" data-section="extracurricular"     data-i18n="nav.extracurricular">Volunteer</a>
         <a href="#education"      class="nav-link" data-section="education"     data-i18n="nav.education">Education</a>
+        <a href="#extracurricular"      class="nav-link" data-section="extracurricular"     data-i18n="nav.extracurricular">Volunteer</a>
         <a href="#skills"         class="nav-link" data-section="skills"        data-i18n="nav.skills">Skills</a>
-        <a href="#languages"      class="nav-link" data-section="languages"     data-i18n="nav.languages">Languages</a>
         <a href="#certifications" class="nav-link" data-section="certifications" data-i18n="nav.certifications">Certifications</a>
         <a href="#contact"        class="nav-link nav-cta" data-section="contact" data-i18n="nav.contact">Contact</a>
       </nav>
@@ -64,10 +63,9 @@
     <a href="#about"          class="drawer-link" data-i18n="nav.about">About</a>
     <a href="#hobbies"        class="drawer-link" data-i18n="nav.hobbies">Hobbies</a>
     <a href="#experience"     class="drawer-link" data-i18n="nav.experience">Experience</a>
-    <a href="#extracurricular"      class="drawer-link" data-i18n="nav.extracurricular">Volunteer</a>
     <a href="#education"      class="drawer-link" data-i18n="nav.education">Education</a>
+    <a href="#extracurricular"      class="drawer-link" data-i18n="nav.extracurricular">Volunteer</a>
     <a href="#skills"         class="drawer-link" data-i18n="nav.skills">Skills</a>
-    <a href="#languages"      class="drawer-link" data-i18n="nav.languages">Languages</a>
     <a href="#certifications" class="drawer-link" data-i18n="nav.certifications">Certifications</a>
     <a href="#contact"        class="drawer-link drawer-cta" data-i18n="nav.contact">Contact</a>
   </div>
@@ -223,208 +221,126 @@
         <button class="filter-btn"        data-filter="industry" data-i18n="exp.filterIndustry">Industry</button>
       </div>
 
-      <div class="timeline">
+      <div class="carousel-wrap">
+        <button class="car-arrow car-prev" id="expPrev" aria-label="Previous experience" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="car-viewport">
+          <div class="car-track" id="expTrack">
 
-        <div class="timeline-item" data-exp-type="academic">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 data-i18n="exp.grad.title">Graduate Research Student</h3>
-                <p class="tl-company">Concordia University · NSERC/Ericsson IRC in SDN/NFV Security</p>
-              </div>
-              <span class="tl-date">May 2023 – Present</span>
+        <div class="exp-card" data-exp-type="academic">
+          <div class="exp-card-accent academic"></div>
+          <div class="exp-card-body">
+            <div class="exp-card-top">
+              <span class="exp-type-badge academic" data-i18n="exp.filterAcademic">Academic</span>
+              <span class="exp-date">May 2023 – Present</span>
             </div>
-            <p class="tl-desc" data-i18n="exp.grad.desc">
-              Developing and evaluating novel security solutions for software-defined networking and network function
-              virtualization. Contributing to the NSERC/Ericsson Industrial Research Chair focused on securing
-              next-generation network architectures.
-            </p>
+            <h3 class="exp-role" data-i18n="exp.grad.title">Graduate Research Student</h3>
+            <p class="exp-company">Concordia University · NSERC/Ericsson IRC in SDN/NFV Security</p>
+            <ul class="exp-bullets">
+              <li data-i18n="exp.grad.b1">Developing and evaluating novel security solutions for SDN and NFV.</li>
+              <li data-i18n="exp.grad.b2">Contributing to the NSERC/Ericsson Industrial Research Chair in network security.</li>
+              <li data-i18n="exp.grad.b3">Researching next-generation security architectures for telecom and cloud-native systems.</li>
+            </ul>
             <div class="tl-tags">
               <span>SDN</span><span>NFV</span><span>Network Security</span><span>Research</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item" data-exp-type="academic">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 data-i18n="exp.mitacs.title">Mitacs Research Intern</h3>
-                <p class="tl-company">Ericsson</p>
-              </div>
-              <span class="tl-date">Sep 2023 – Dec 2023</span>
+        <div class="exp-card" data-exp-type="academic">
+          <div class="exp-card-accent academic"></div>
+          <div class="exp-card-body">
+            <div class="exp-card-top">
+              <span class="exp-type-badge academic" data-i18n="exp.filterAcademic">Academic</span>
+              <span class="exp-date">Sep 2023 – Dec 2023</span>
             </div>
-            <p class="tl-desc" data-i18n="exp.mitacs.desc">
-              Collaborated with Ericsson researchers on industry-driven security challenges for modern telecom and
-              cloud-native network infrastructure.
-            </p>
+            <h3 class="exp-role" data-i18n="exp.mitacs.title">Mitacs Research Intern</h3>
+            <p class="exp-company">Ericsson</p>
+            <ul class="exp-bullets">
+              <li data-i18n="exp.mitacs.b1">Used Ansible as an automation tool for deployment of server tools and configuration.</li>
+              <li data-i18n="exp.mitacs.b2">Used Docker for testing vulnerabilities and exploits.</li>
+              <li data-i18n="exp.mitacs.b3">Used Kubernetes for app deployments and vulnerabilities research.</li>
+              <li data-i18n="exp.mitacs.b4">Researched Kernel and 5G vulnerabilities.</li>
+            </ul>
             <div class="tl-tags">
-              <span>Telecom</span><span>Cloud-Native</span><span>Security</span>
+              <span>Ansible</span><span>Docker</span><span>Kubernetes</span><span>5G</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item" data-exp-type="industry">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 data-i18n="exp.devops.title">DevOps Engineer</h3>
-                <p class="tl-company">Pyxis</p>
-              </div>
-              <span class="tl-date">May 2022 – Mar 2023</span>
+        <div class="exp-card" data-exp-type="industry">
+          <div class="exp-card-accent industry"></div>
+          <div class="exp-card-body">
+            <div class="exp-card-top">
+              <span class="exp-type-badge industry" data-i18n="exp.filterIndustry">Industry</span>
+              <span class="exp-date">May 2022 – Mar 2023</span>
             </div>
-            <p class="tl-desc" data-i18n="exp.devops.desc">
-              Designed, implemented, and maintained cloud-based infrastructures using AWS and Linux. Collaborated with
-              engineers and stakeholders to ensure the quality and security of software products and services.
-            </p>
+            <h3 class="exp-role" data-i18n="exp.devops.title">DevOps Engineer</h3>
+            <p class="exp-company">Pyxis</p>
+            <ul class="exp-bullets">
+              <li data-i18n="exp.devops.b1">Used Terraform and Terragrunt for IaaC construction and deployment in AWS.</li>
+              <li data-i18n="exp.devops.b2">Used Ansible as an automation tool for deployment of server tools and configuration.</li>
+              <li data-i18n="exp.devops.b3">AWS Networking and Configuration for High Availability and High Scalability.</li>
+              <li data-i18n="exp.devops.b4">Used Docker for environmental configuration and deployment of applications in AWS.</li>
+            </ul>
             <div class="tl-tags">
-              <span>AWS</span><span>Linux</span><span>DevOps</span><span>CI/CD</span>
+              <span>AWS</span><span>Terraform</span><span>Ansible</span><span>Docker</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item" data-exp-type="industry">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 data-i18n="exp.epm.title">Intern — Energy Markets</h3>
-                <p class="tl-company">Empresas Públicas de Medellín (EPM) · Área Gestión Bolsa de Energía</p>
-              </div>
-              <span class="tl-date">Aug 2021 – Feb 2022</span>
+        <div class="exp-card" data-exp-type="industry">
+          <div class="exp-card-accent industry"></div>
+          <div class="exp-card-body">
+            <div class="exp-card-top">
+              <span class="exp-type-badge industry" data-i18n="exp.filterIndustry">Industry</span>
+              <span class="exp-date">Aug 2021 – Feb 2022</span>
             </div>
-            <p class="tl-desc" data-i18n="exp.epm.desc">
-              Supported the energy markets management area with data analysis and software tooling for
-              electricity market operations.
-            </p>
+            <h3 class="exp-role" data-i18n="exp.epm.title">Intern — Energy Markets</h3>
+            <p class="exp-company">Empresas Públicas de Medellín (EPM) · Área Gestión Bolsa de Energía</p>
+            <ul class="exp-bullets">
+              <li data-i18n="exp.epm.b1">Used Data Science programming languages: Python, Matlab, and R.</li>
+              <li data-i18n="exp.epm.b2">Built Machine Learning Models for hydrological forecasting.</li>
+              <li data-i18n="exp.epm.b3">Performed data analysis of model results.</li>
+              <li data-i18n="exp.epm.b4">Built a web scraping tool to extract data from XM.com.co.</li>
+              <li data-i18n="exp.epm.b5">Built an API connector tool to fetch and analyse data from XM.com.co.</li>
+            </ul>
             <div class="tl-tags">
-              <span>Energy Markets</span><span>Data Analysis</span><span>Python</span>
+              <span>Python</span><span>Matlab</span><span>Machine Learning</span><span>Data Analysis</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item" data-exp-type="academic">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 data-i18n="exp.ra.title">Research Assistant</h3>
-                <p class="tl-company">Universidad EAFIT · Apolo Scientific Computing Center</p>
-              </div>
-              <span class="tl-date">Sep 2019 – Jun 2021</span>
+        <div class="exp-card" data-exp-type="academic">
+          <div class="exp-card-accent academic"></div>
+          <div class="exp-card-body">
+            <div class="exp-card-top">
+              <span class="exp-type-badge academic" data-i18n="exp.filterAcademic">Academic</span>
+              <span class="exp-date">Sep 2019 – Jun 2021</span>
             </div>
-            <p class="tl-desc" data-i18n="exp.ra.desc">
-              Participated in projects related to energy markets, data analysis, and software development.
-              Contributed to HPC workloads at the Apolo Scientific Computing Center across three consecutive terms.
-            </p>
+            <h3 class="exp-role" data-i18n="exp.ra.title">Research Assistant</h3>
+            <p class="exp-company">Universidad EAFIT · Apolo Scientific Computing Center</p>
+            <ul class="exp-bullets">
+              <li data-i18n="exp.ra.b1">Linux System Admin — reviewed packages for vulnerabilities.</li>
+              <li data-i18n="exp.ra.b2">Deployed private web apps in Docker to secure the cluster.</li>
+              <li data-i18n="exp.ra.b3">Created "LMOD module generator" script for app usage [Bash].</li>
+              <li data-i18n="exp.ra.b4">Used Ansible and Vagrant for deployment of server tools and configuration.</li>
+              <li data-i18n="exp.ra.b5">Installed HPC applications for cluster users.</li>
+            </ul>
             <div class="tl-tags">
-              <span>HPC</span><span>Data Analysis</span><span>Machine Learning</span><span>Python</span>
+              <span>Linux</span><span>Docker</span><span>Ansible</span><span>HPC</span><span>Bash</span>
             </div>
           </div>
         </div>
 
-      </div>
-    </div>
-  </section>
+          </div><!-- /.car-track -->
+        </div><!-- /.car-viewport -->
+        <button class="car-arrow car-next" id="expNext" aria-label="Next experience">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div><!-- /.carousel-wrap -->
 
-  <!-- VOLUNTEER -->
-  <section id="extracurricular" class="section">
-    <div class="container">
-      <h2 class="section-title" data-i18n="extracurricular.title">Volunteer</h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 data-i18n="extracurricular.ctf.title">CTF Participant</h3>
-                <p class="tl-company">Various CTFs · Montreal, Canada</p>
-              </div>
-              <span class="tl-date">Feb 2024 – Present</span>
-            </div>
-            <div class="ctf-tree">
-              <details class="ctf-group" open>
-                <summary>
-                  <span class="ctf-chevron"></span>
-                  <span class="ctf-group-label">NorthSec</span>
-                </summary>
-                <ul class="ctf-events">
-                  <li class="ctf-event"><span class="ctf-year">2024</span></li>
-                  <li class="ctf-event"><span class="ctf-year">2025</span></li>
-                </ul>
-              </details>
-              <details class="ctf-group" open>
-                <summary>
-                  <span class="ctf-chevron"></span>
-                  <span class="ctf-group-label">PolyPwn</span>
-                </summary>
-                <ul class="ctf-events">
-                  <li class="ctf-event"><span class="ctf-year">2025</span></li>
-                  <li class="ctf-event">
-                    <span class="ctf-year">2026</span>
-                    <span class="ctf-badge" data-i18n="extracurricular.thirdPlace">🥉 3rd Place</span>
-                  </li>
-                </ul>
-              </details>
-              <details class="ctf-group" open>
-                <summary>
-                  <span class="ctf-chevron"></span>
-                  <span class="ctf-group-label">@HAck</span>
-                </summary>
-                <ul class="ctf-events">
-                  <li class="ctf-event"><span class="ctf-year">2024</span></li>
-                </ul>
-              </details>
-            </div>
-            <div class="tl-tags" style="margin-top:0.75rem">
-              <span>CTF</span><span>Pentesting</span><span>Cyber Security</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 data-i18n="extracurricular.athack.title">@Hack CTF Organizer</h3>
-                <p class="tl-company">AtHack CTF · Montreal, Canada</p>
-              </div>
-              <span class="tl-date">Feb 2025</span>
-            </div>
-            <p class="tl-desc" data-i18n="extracurricular.athack.desc">
-              Helped organize the @Hack CTF event with over 300 participants. Provided support on challenges and guided participants throughout the competition.
-            </p>
-            <div class="tl-tags">
-              <span>CTF</span><span>Event Organization</span><span>Mentoring</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="tl-header">
-              <div>
-                <h3 data-i18n="extracurricular.gemis.title">GEMIS Member &amp; Financial Director</h3>
-                <p class="tl-company">GEMIS · Universidad EAFIT</p>
-              </div>
-              <span class="tl-date">Sep 2019 – Jun 2022</span>
-            </div>
-            <p class="tl-desc" data-i18n="extracurricular.gemis.desc">
-              Organized social events and award shows for 150+ CS students each semester. Elected Financial Director (Jan–Jul 2021), managing the budget for student events and gatherings.
-            </p>
-            <div class="tl-tags">
-              <span>Leadership</span><span>Event Organization</span><span>Community</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
   </section>
 
@@ -467,8 +383,119 @@
     </div>
   </section>
 
+  <!-- VOLUNTEER -->
+  <section id="extracurricular" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-i18n="extracurricular.title">Volunteer</h2>
+
+      <div class="carousel-wrap">
+        <button class="car-arrow car-prev" id="extPrev" aria-label="Previous activity" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="car-viewport">
+          <div class="car-track" id="extTrack">
+
+            <div class="exp-card">
+              <div class="exp-card-accent academic"></div>
+              <div class="exp-card-body">
+                <div class="exp-card-top">
+                  <span class="exp-date">Feb 2024 – Present</span>
+                </div>
+                <h3 class="exp-role" data-i18n="extracurricular.ctf.title">CTF Participant</h3>
+                <p class="exp-company">Various CTFs · Montreal, Canada</p>
+                <ul class="exp-bullets">
+                  <li data-i18n="extracurricular.ctf.b1">Participated in NorthSec 2024 and NorthSec 2025 CTFs.</li>
+                  <li data-i18n="extracurricular.ctf.b2">Participated in PolyPwn 2025 and 2026 CTF (3rd place in the 2026 edition).</li>
+                  <li data-i18n="extracurricular.ctf.b3">Participated in @HAck 2024 CTF.</li>
+                </ul>
+                <div class="ctf-tree">
+                  <details class="ctf-group">
+                    <summary>
+                      <span class="ctf-chevron"></span>
+                      <span class="ctf-group-label">NorthSec</span>
+                    </summary>
+                    <ul class="ctf-events">
+                      <li class="ctf-event"><span class="ctf-year">2024</span></li>
+                      <li class="ctf-event"><span class="ctf-year">2025</span></li>
+                    </ul>
+                  </details>
+                  <details class="ctf-group">
+                    <summary>
+                      <span class="ctf-chevron"></span>
+                      <span class="ctf-group-label">PolyPwn</span>
+                    </summary>
+                    <ul class="ctf-events">
+                      <li class="ctf-event"><span class="ctf-year">2025</span></li>
+                      <li class="ctf-event">
+                        <span class="ctf-year">2026</span>
+                        <span class="ctf-badge" data-i18n="extracurricular.thirdPlace">🥉 3rd</span>
+                      </li>
+                    </ul>
+                  </details>
+                  <details class="ctf-group">
+                    <summary>
+                      <span class="ctf-chevron"></span>
+                      <span class="ctf-group-label">@HAck</span>
+                    </summary>
+                    <ul class="ctf-events">
+                      <li class="ctf-event"><span class="ctf-year">2024</span></li>
+                    </ul>
+                  </details>
+                </div>
+                <div class="tl-tags" style="margin-top:0.75rem">
+                  <span>CTF</span><span>Pentesting</span><span>Cyber Security</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-accent academic"></div>
+              <div class="exp-card-body">
+                <div class="exp-card-top">
+                  <span class="exp-date">Feb 2025</span>
+                </div>
+                <h3 class="exp-role" data-i18n="extracurricular.athack.title">@Hack CTF Organizer</h3>
+                <p class="exp-company">AtHack CTF · Montreal, Canada</p>
+                <ul class="exp-bullets">
+                  <li data-i18n="extracurricular.athack.b1">Helped organize the @Hack CTF event with over 300 participants.</li>
+                  <li data-i18n="extracurricular.athack.b2">Gave support on challenges and guided participants throughout the competition.</li>
+                </ul>
+                <div class="tl-tags">
+                  <span>CTF</span><span>Event Organization</span><span>Mentoring</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-accent academic"></div>
+              <div class="exp-card-body">
+                <div class="exp-card-top">
+                  <span class="exp-date">Sep 2019 – Jun 2022</span>
+                </div>
+                <h3 class="exp-role" data-i18n="extracurricular.gemis.title">GEMIS Member &amp; Financial Director</h3>
+                <p class="exp-company">GEMIS · Universidad EAFIT</p>
+                <ul class="exp-bullets">
+                  <li data-i18n="extracurricular.gemis.b1">Organized social events and award shows for 150+ CS students each semester at Universidad EAFIT.</li>
+                  <li data-i18n="extracurricular.gemis.b2">Elected Financial Director (Jan–Jul 2021), managing the budget for student events and gatherings.</li>
+                </ul>
+                <div class="tl-tags">
+                  <span>Leadership</span><span>Event Organization</span><span>Community</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.car-track -->
+        </div><!-- /.car-viewport -->
+        <button class="car-arrow car-next" id="extNext" aria-label="Next activity">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div><!-- /.carousel-wrap -->
+
+    </div>
+  </section>
+
   <!-- SKILLS -->
-  <section id="skills" class="section section-alt">
+  <section id="skills" class="section">
     <div class="container">
       <h2 class="section-title" data-i18n="skills.title">Skills &amp; Technologies</h2>
       <div class="skills-grid">
@@ -509,13 +536,8 @@
         </div>
 
       </div>
-    </div>
-  </section>
 
-  <!-- LANGUAGES -->
-  <section id="languages" class="section">
-    <div class="container">
-      <h2 class="section-title" data-i18n="languages.title">Languages</h2>
+      <h2 class="section-title" style="margin-top:3rem" data-i18n="languages.title">Languages</h2>
       <div class="lang-grid">
 
         <div class="lang-card">
@@ -674,6 +696,7 @@
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/terminal.js"></script>
   <script src="assets/js/experience.js"></script>
+  <script src="assets/js/extracurricular.js"></script>
   <script src="assets/js/translations.js"></script>
   <script src="assets/js/i18n.js"></script>
 </body>

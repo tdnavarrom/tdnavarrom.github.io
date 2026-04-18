@@ -65,6 +65,9 @@
   .edu-card  { padding: 1.25rem; gap: 1rem; }
   .cert-item { padding: 0.9rem 1rem; gap: 0.9rem; }
 
+  /* Experience: 1 card wide on mobile */
+  .exp-card  { flex: 0 0 90%; } /* 90% so you can see the next card peeking */
+
   /* Contact */
   .contact-sub { max-width: 100%; }
 

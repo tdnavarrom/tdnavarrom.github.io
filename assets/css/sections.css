@@ -64,6 +64,162 @@
 .stat-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; line-height: 1.3; }
 
 /* ============================================================
+   EXPERIENCE CAROUSEL
+   ============================================================ */
+
+.carousel-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Clipping window — hides cards outside the visible area */
+.car-viewport {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sliding track — moved via transform in JS */
+.car-track {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start; /* cards don't resize to match the tallest sibling */
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Arrow buttons */
+.car-arrow {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--transition), background var(--transition), opacity var(--transition);
+}
+.car-arrow svg { width: 1rem; height: 1rem; }
+.car-arrow:hover { border-color: var(--accent); background: var(--accent-dim); }
+.car-arrow:disabled { opacity: 0.3; cursor: default; pointer-events: none; }
+
+/* Hidden cards (filtered out) collapse cleanly */
+.exp-card[hidden] { display: none; }
+
+.exp-card {
+  flex: 0 0 calc(50% - 0.625rem); /* 2 visible: (100% - 1 gap) / 2 */
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.exp-card:hover {
+  border-color: var(--accent-dim);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Coloured top accent bar */
+.exp-card-accent {
+  height: 3px;
+  flex-shrink: 0;
+}
+.exp-card-accent.academic { background: var(--accent); }
+.exp-card-accent.industry { background: var(--green); }
+
+.exp-card-body {
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Top row: type badge + date */
+.exp-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.9rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.exp-type-badge {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
+}
+.exp-type-badge.academic {
+  background: var(--accent-glow);
+  border: 1px solid rgba(88,166,255,0.25);
+  color: var(--accent);
+}
+.exp-type-badge.industry {
+  background: var(--green-dim);
+  border: 1px solid rgba(63,185,80,0.25);
+  color: var(--green);
+}
+
+.exp-date {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.exp-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.exp-company {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.85rem;
+}
+
+/* Bullet list used in both experience cards and extracurricular timeline */
+.exp-bullets {
+  list-style: none;
+  margin-bottom: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.exp-bullets li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.845rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.exp-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+  top: 0.18em;
+}
+
+/* ============================================================
    EXPERIENCE FILTER
    ============================================================ */
 .exp-filter {
@@ -87,8 +243,6 @@
 }
 .filter-btn:hover { border-color: var(--accent); color: var(--text); }
 .filter-btn.active { background: var(--accent-dim); border-color: var(--accent-dim); color: #fff; }
-
-.timeline-item[hidden] { display: none; }
 
 /* ============================================================
    TIMELINE
@@ -505,13 +659,14 @@
   display: flex;
   flex-direction: row;
   gap: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* always one row, regardless of open/closed state */
 }
 
 .ctf-group {
   border-radius: 6px;
-  min-width: 120px;
-  padding-right: 1.5rem;
+  flex: 1;           /* divide row equally among the three groups */
+  min-width: 0;      /* allow shrinking below content size */
+  padding-right: 0.75rem;
 }
 
 .ctf-group > summary {
@@ -590,4 +745,5 @@
   font-weight: 500;
   padding: 0.1rem 0.45rem;
   border-radius: 4px;
+  white-space: nowrap;
 }
