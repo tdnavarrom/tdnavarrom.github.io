@@ -10,6 +10,14 @@ function getVal(obj, path) {
   return path.split('.').reduce((o, k) => o?.[k], obj);
 }
 
+// Maps each language to its compiled CV PDF, published by the
+// TomasNavarro_CV repo's build-and-publish workflow.
+const cvByLang = {
+  en: 'assets/cv/cv.pdf',
+  es: 'assets/cv/cv_es.pdf',
+  fr: 'assets/cv/cv_fr.pdf',
+};
+
 // Swaps all translatable text on the page to the given language code.
 // Relies on two HTML attributes:
 //   data-i18n="some.key"      → sets el.textContent (plain text)
@@ -17,6 +25,10 @@ function getVal(obj, path) {
 function applyLang(lang) {
   const t = translations[lang]; // look up the translation object (see translations.js)
   if (!t) return;               // silently ignore unknown language codes
+
+  // Point the CV download button at the PDF matching the selected language
+  const cvLink = document.getElementById('cv-download-link');
+  if (cvLink && cvByLang[lang]) cvLink.href = cvByLang[lang];
 
   // Plain-text replacements
   document.querySelectorAll('[data-i18n]').forEach(el => {
