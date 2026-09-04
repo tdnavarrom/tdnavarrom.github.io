@@ -13,14 +13,15 @@ const translations = {
     },
     hero: {
       greeting: "Hi, I'm",
-      subtitle: 'Graduate Research Student @ Concordia University<br>Cloud Engineer &nbsp;·&nbsp; AWS &nbsp;·&nbsp; Linux &nbsp;·&nbsp; Cyber Security',
+      subtitle: 'Devops Engineer &nbsp;·&nbsp; Security Researcher',
       cta1: 'Get in touch',
       cta2: 'View experience',
       cv: 'Download CV'
     },
     pub: {
       title: 'Publications',
-      acceptance: 'Acceptance ratio: 257 / 1740 ≈ 14.8%'
+      acceptance: 'Acceptance ratio: 257 / 1740 ≈ 14.8%',
+      thesisStatus: 'Status: Thesis accepted · Paper TBA'
     },
     extracurricular: {
       title: 'Extracurricular Activities',
@@ -38,7 +39,7 @@ const translations = {
     },
     about: {
       title: 'About Me',
-      p1: "I'm a <strong>DevOps and cloud engineer</strong> who loves cybersecurity, based in Montreal. Currently pursuing an <strong>MSc in Information Security</strong> at Concordia University, with research and industry experience at <strong>Ericsson</strong>, <strong>Pyxis</strong>, and <strong>Universidad EAFIT</strong>.",
+      p1: "I'm a <strong>DevOps and cloud engineer</strong> who loves cybersecurity, based in Montreal. I graduated with an <strong>M.A.Sc. in Information Security</strong> from Concordia University, researching <strong>eBPF</strong>-based kernel and container security, with industry experience at <strong>Ericsson</strong>, <strong>Pyxis</strong>, and <strong>Universidad EAFIT</strong>.",
       p2: "I love <strong>traveling</strong> and learning about new cultures and languages — especially escaping to <strong>Argentina</strong> and <strong>Brazil</strong>. I also enjoy playing <strong>guitar</strong>, following football and combat sports, hiking, and competing in <strong>CTF</strong> cybersecurity competitions.",
       statExp: 'Years of experience',
       statSec: 'Information Security',
@@ -56,16 +57,11 @@ const translations = {
     },
     exp: {
       title: 'Experience',
-      filterAll: 'All', filterAcademic: 'Academic', filterIndustry: 'Industry',
       grad:   { title: 'Graduate Research Student',
-        b1: 'Developing and evaluating novel security solutions for SDN and NFV.',
-        b2: 'Contributing to the NSERC/Ericsson Industrial Research Chair in network security.',
-        b3: 'Researching next-generation security architectures for telecom and cloud-native systems.' },
-      mitacs: { title: 'Mitacs Research Intern',
-        b1: 'Used Ansible as an automation tool for deployment of server tools and configuration.',
-        b2: 'Used Docker for testing vulnerabilities and exploits.',
-        b3: 'Used Kubernetes for app deployments and vulnerabilities research.',
-        b4: 'Researched Kernel and 5G vulnerabilities.' },
+        b1: 'Selected for a Mitacs Accelerate research internship (Sep–Dec 2023) with Ericsson.',
+        b2: 'Used Docker and Podman for testing cross-container vulnerabilities and exploits.',
+        b3: 'Used eBPF for detecting kernel attacks and building mitigation solutions.',
+        b4: 'Researching kernel and cross-container attacks.' },
       devops: { title: 'DevOps Engineer',
         b1: 'Used Terraform and Terragrunt for IaaC construction and deployment in AWS.',
         b2: 'Used Ansible as an automation tool for deployment of server tools and configuration.',
@@ -86,7 +82,7 @@ const translations = {
     },
     edu: {
       title: 'Education',
-      inProgress: 'In Progress', graduated: 'Graduated',
+      graduated: 'Graduated',
       mscTitle: 'Master of Science',
       mscField: 'Computer & Information Systems Security / Information Assurance',
       bsTitle: "Bachelor's Degree", bsField: 'Computer Science'
@@ -94,12 +90,13 @@ const translations = {
     skills: {
       title: 'Skills & Technologies',
       cloud: 'Cloud & Infrastructure', programming: 'Programming Languages',
+      backend: 'Back-end', frontend: 'Front-end',
       frameworks: 'Frameworks & Tools', security: 'Cyber Security & Research',
       data: 'Data & Machine Learning'
     },
     languages: {
       title: 'Languages',
-      nativeBadge: 'Native', fluentBadge: 'Fluent · C1', intermediateBadge: 'Intermediate · B1'
+      nativeBadge: 'Native', fluentBadge: 'Fluent · C1', intermediateBadge: 'Intermediate · B1', basicBadge: 'Basic'
     },
     certs: { title: 'Certificates' },
     contact: {
@@ -116,14 +113,15 @@ const translations = {
     },
     hero: {
       greeting: '¡Hola, soy',
-      subtitle: 'Estudiante de Investigación @ Universidad Concordia<br>Ingeniero de Nube · AWS · Linux · Ciberseguridad',
+      subtitle: 'Ingeniero DevOps &nbsp;·&nbsp; Investigador de Seguridad',
       cta1: 'Hablemos',
       cta2: 'Ver experiencia',
       cv: 'Descargar CV'
     },
     pub: {
       title: 'Publicaciones',
-      acceptance: 'Tasa de aceptación: 257 / 1740 ≈ 14.8%'
+      acceptance: 'Tasa de aceptación: 257 / 1740 ≈ 14.8%',
+      thesisStatus: 'Estado: Tesis aceptada · Artículo por confirmar'
     },
     extracurricular: {
       title: 'Actividades Extracurriculares',
@@ -141,7 +139,7 @@ const translations = {
     },
     about: {
       title: 'Sobre mí',
-      p1: 'Soy <strong>ingeniero DevOps y de nube</strong> apasionado por la ciberseguridad, radicado en Montreal. Actualmente cursando una <strong>Maestría en Seguridad Informática</strong> en la Universidad Concordia, con experiencia en investigación e industria en <strong>Ericsson</strong>, <strong>Pyxis</strong> y la <strong>Universidad EAFIT</strong>.',
+      p1: 'Soy <strong>ingeniero DevOps y de nube</strong> apasionado por la ciberseguridad, radicado en Montreal. Me gradué con una <strong>Maestría (M.A.Sc.) en Seguridad Informática</strong> de la Universidad Concordia, investigando seguridad de kernel y contenedores basada en <strong>eBPF</strong>, con experiencia en industria en <strong>Ericsson</strong>, <strong>Pyxis</strong> y la <strong>Universidad EAFIT</strong>.',
       p2: 'Me encanta <strong>viajar</strong> y aprender sobre nuevas culturas e idiomas — especialmente escaparme a <strong>Argentina</strong> y <strong>Brasil</strong>. También disfruto tocar <strong>guitarra</strong>, seguir el fútbol y los deportes de combate, hacer senderismo y competir en <strong>CTF</strong> de ciberseguridad.',
       statExp: 'Años de experiencia',
       statSec: 'Seguridad Informática',
@@ -159,16 +157,11 @@ const translations = {
     },
     exp: {
       title: 'Experiencia',
-      filterAll: 'Todos', filterAcademic: 'Académica', filterIndustry: 'Industria',
       grad:   { title: 'Estudiante de Investigación de Posgrado',
-        b1: 'Desarrollando y evaluando soluciones de seguridad para redes SDN y NFV.',
-        b2: 'Contribuyendo a la Cátedra Industrial NSERC/Ericsson en seguridad de redes.',
-        b3: 'Investigando arquitecturas de seguridad de nueva generación para sistemas cloud-native.' },
-      mitacs: { title: 'Pasante de Investigación Mitacs',
-        b1: 'Uso de Ansible como herramienta de automatización para despliegue de herramientas y configuración de servidores.',
-        b2: 'Uso de Docker para pruebas de vulnerabilidades y exploits.',
-        b3: 'Uso de Kubernetes para despliegues de apps e investigación de vulnerabilidades.',
-        b4: 'Investigación de vulnerabilidades en Kernel y 5G.' },
+        b1: 'Seleccionado para una pasantía de investigación Mitacs Accelerate (sep.–dic. 2023) con Ericsson.',
+        b2: 'Uso de Docker y Podman para pruebas de vulnerabilidades y exploits entre contenedores.',
+        b3: 'Uso de eBPF para la detección de ataques al kernel y desarrollo de soluciones de mitigación.',
+        b4: 'Investigación de ataques al kernel y entre contenedores.' },
       devops: { title: 'Ingeniero DevOps',
         b1: 'Uso de Terraform y Terragrunt para construcción y despliegue de IaaC en AWS.',
         b2: 'Uso de Ansible como herramienta de automatización para configuración de servidores.',
@@ -189,7 +182,7 @@ const translations = {
     },
     edu: {
       title: 'Educación',
-      inProgress: 'En curso', graduated: 'Graduado',
+      graduated: 'Graduado',
       mscTitle: 'Maestría en Ciencias',
       mscField: 'Seguridad de Sistemas e Información / Garantía de Información',
       bsTitle: 'Pregrado', bsField: 'Ciencias de la Computación'
@@ -197,12 +190,13 @@ const translations = {
     skills: {
       title: 'Habilidades y Tecnologías',
       cloud: 'Nube e Infraestructura', programming: 'Lenguajes de Programación',
+      backend: 'Back-end', frontend: 'Front-end',
       frameworks: 'Frameworks y Herramientas', security: 'Ciberseguridad e Investigación',
       data: 'Datos y Machine Learning'
     },
     languages: {
       title: 'Idiomas',
-      nativeBadge: 'Nativo', fluentBadge: 'Fluido · C1', intermediateBadge: 'Intermedio · B1'
+      nativeBadge: 'Nativo', fluentBadge: 'Fluido · C1', intermediateBadge: 'Intermedio · B1', basicBadge: 'Básico'
     },
     certs: { title: 'Certificados' },
     contact: {
@@ -219,14 +213,15 @@ const translations = {
     },
     hero: {
       greeting: 'Bonjour, je suis',
-      subtitle: 'Étudiant chercheur @ Université Concordia<br>Ingénieur Cloud · AWS · Linux · Cybersécurité',
+      subtitle: 'Ingénieur DevOps &nbsp;·&nbsp; Chercheur en Sécurité',
       cta1: 'Me contacter',
       cta2: "Voir l'expérience",
       cv: 'Télécharger CV'
     },
     pub: {
       title: 'Publications',
-      acceptance: "Taux d'acceptation : 257 / 1740 ≈ 14.8%"
+      acceptance: "Taux d'acceptation : 257 / 1740 ≈ 14.8%",
+      thesisStatus: 'Statut : Thèse acceptée · Article à confirmer'
     },
     extracurricular: {
       title: 'Activités Parascolaires',
@@ -244,7 +239,7 @@ const translations = {
     },
     about: {
       title: 'À propos',
-      p1: "Je suis <strong>ingénieur DevOps et cloud</strong> passionné par la cybersécurité, basé à Montréal. Je poursuis une <strong>Maîtrise en Sécurité de l'Information</strong> à l'Université Concordia, avec une expérience en recherche et en industrie chez <strong>Ericsson</strong>, <strong>Pyxis</strong> et à l'<strong>Université EAFIT</strong>.",
+      p1: "Je suis <strong>ingénieur DevOps et cloud</strong> passionné par la cybersécurité, basé à Montréal. J'ai obtenu une <strong>Maîtrise (M.A.Sc.) en Sécurité de l'Information</strong> de l'Université Concordia, où j'ai mené des recherches sur la sécurité du noyau et des conteneurs basée sur <strong>eBPF</strong>, avec une expérience en industrie chez <strong>Ericsson</strong>, <strong>Pyxis</strong> et à l'<strong>Université EAFIT</strong>.",
       p2: "J'adore <strong>voyager</strong> et découvrir de nouvelles cultures et langues — surtout m'évader en <strong>Argentine</strong> et au <strong>Brésil</strong>. J'aime aussi jouer de la <strong>guitare</strong>, suivre le football et les sports de combat, randonner, et participer à des <strong>CTF</strong> en cybersécurité.",
       statExp: "Années d'expérience",
       statSec: "Sécurité de l'Information",
@@ -262,16 +257,11 @@ const translations = {
     },
     exp: {
       title: 'Expérience',
-      filterAll: 'Tous', filterAcademic: 'Académique', filterIndustry: 'Industrie',
       grad:   { title: 'Étudiant chercheur en master',
-        b1: 'Développement et évaluation de solutions de sécurité innovantes pour les réseaux SDN et NFV.',
-        b2: 'Contribution à la Chaire de Recherche Industrielle NSERC/Ericsson en sécurité réseau.',
-        b3: "Recherche d'architectures de sécurité de nouvelle génération pour les systèmes cloud-native." },
-      mitacs: { title: 'Stagiaire de Recherche Mitacs',
-        b1: "Utilisation d'Ansible comme outil d'automatisation pour le déploiement d'outils serveur.",
-        b2: 'Utilisation de Docker pour tester des vulnérabilités et des exploits.',
-        b3: "Utilisation de Kubernetes pour le déploiement d'applications et la recherche de vulnérabilités.",
-        b4: 'Recherche de vulnérabilités dans le Kernel et la 5G.' },
+        b1: 'Sélectionné pour un stage de recherche Mitacs Accelerate (sep.–déc. 2023) avec Ericsson.',
+        b2: 'Utilisation de Docker et Podman pour tester les vulnérabilités et exploits inter-conteneurs.',
+        b3: "Utilisation d'eBPF pour la détection d'attaques noyau et le développement de solutions de mitigation.",
+        b4: 'Recherche sur les attaques noyau et inter-conteneurs.' },
       devops: { title: 'Ingénieur DevOps',
         b1: 'Utilisation de Terraform et Terragrunt pour la construction et le déploiement IaaC dans AWS.',
         b2: "Utilisation d'Ansible pour l'automatisation du déploiement d'outils et de la configuration.",
@@ -292,7 +282,7 @@ const translations = {
     },
     edu: {
       title: 'Formation',
-      inProgress: 'En cours', graduated: 'Diplômé',
+      graduated: 'Diplômé',
       mscTitle: 'Master of Science',
       mscField: "Sécurité des Systèmes d'Information / Assurance de l'Information",
       bsTitle: 'Licence', bsField: 'Informatique'
@@ -300,12 +290,13 @@ const translations = {
     skills: {
       title: 'Compétences et Technologies',
       cloud: 'Cloud et Infrastructure', programming: 'Langages de Programmation',
+      backend: 'Back-end', frontend: 'Front-end',
       frameworks: 'Frameworks et Outils', security: 'Cybersécurité et Recherche',
       data: 'Données et Machine Learning'
     },
     languages: {
       title: 'Langues',
-      nativeBadge: 'Natif', fluentBadge: 'Courant · C1', intermediateBadge: 'Intermédiaire · B1'
+      nativeBadge: 'Natif', fluentBadge: 'Courant · C1', intermediateBadge: 'Intermédiaire · B1', basicBadge: 'Notions de base'
     },
     certs: { title: 'Certificats' },
     contact: {

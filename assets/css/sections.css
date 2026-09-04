@@ -150,26 +150,6 @@
   flex-wrap: wrap;
 }
 
-.exp-type-badge {
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  padding: 0.18rem 0.55rem;
-  border-radius: 4px;
-}
-.exp-type-badge.academic {
-  background: var(--accent-glow);
-  border: 1px solid rgba(88,166,255,0.25);
-  color: var(--accent);
-}
-.exp-type-badge.industry {
-  background: var(--green-dim);
-  border: 1px solid rgba(63,185,80,0.25);
-  color: var(--green);
-}
-
 .exp-date {
   font-family: var(--mono);
   font-size: 0.72rem;
@@ -218,31 +198,6 @@
   font-size: 0.7rem;
   top: 0.18em;
 }
-
-/* ============================================================
-   EXPERIENCE FILTER
-   ============================================================ */
-.exp-filter {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  font-size: 0.82rem;
-  font-weight: 500;
-  padding: 0.4rem 1.1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: var(--font);
-  transition: border-color var(--transition), color var(--transition), background var(--transition);
-}
-.filter-btn:hover { border-color: var(--accent); color: var(--text); }
-.filter-btn.active { background: var(--accent-dim); border-color: var(--accent-dim); color: #fff; }
 
 /* ============================================================
    TIMELINE
@@ -413,6 +368,13 @@
   cursor: default;
 }
 .skill-chips span:hover { border-color: var(--accent); color: var(--accent); }
+.skill-chips span.featured {
+  background: var(--accent-glow);
+  border-color: rgba(88,166,255,0.35);
+  color: var(--accent);
+  font-weight: 600;
+}
+.skill-chips span.featured:hover { border-color: var(--accent); }
 
 /* ============================================================
    LANGUAGES
@@ -473,6 +435,11 @@
   background: rgba(255,166,0,0.12);
   border: 1px solid rgba(255,166,0,0.25);
   color: #e6980a;
+}
+.lang-badge.basic {
+  background: rgba(139,148,158,0.12);
+  border: 1px solid rgba(139,148,158,0.25);
+  color: var(--text-muted);
 }
 
 .lang-bar {

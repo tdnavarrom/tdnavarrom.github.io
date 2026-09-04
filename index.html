@@ -84,8 +84,7 @@
         Navarro Múnera
       </h1>
       <p class="hero-subtitle" data-i18n-html="hero.subtitle">
-        Graduate Research Student @ Concordia University<br />
-        Cloud Engineer &nbsp;·&nbsp; AWS &nbsp;·&nbsp; Linux &nbsp;·&nbsp; Security
+        Devops Engineer &nbsp;·&nbsp; Security Researcher
       </p>
       <div class="hero-actions">
         <a href="#contact"    class="btn-primary"   data-i18n="hero.cta1">Get in touch</a>
@@ -127,7 +126,7 @@
       <div class="about-grid">
         <div class="about-text">
           <p data-i18n-html="about.p1">
-            I'm a <strong>DevOps and cloud engineer</strong> who loves cybersecurity, based in Montreal. Currently pursuing an <strong>MSc in Information Security</strong> at Concordia University, with research and industry experience at <strong>Ericsson</strong>, <strong>Pyxis</strong>, and <strong>Universidad EAFIT</strong>.
+            I'm a <strong>DevOps and cloud engineer</strong> who loves cybersecurity, based in Montreal. I graduated with an <strong>M.A.Sc. in Information Security</strong> from Concordia University, researching <strong>eBPF</strong>-based kernel and container security, with industry experience at <strong>Ericsson</strong>, <strong>Pyxis</strong>, and <strong>Universidad EAFIT</strong>.
           </p>
           <p data-i18n-html="about.p2">
             I love <strong>traveling</strong> and learning about new cultures and languages — especially escaping to <strong>Argentina</strong> and <strong>Brazil</strong>. I also enjoy playing <strong>guitar</strong>, following football and combat sports, hiking, and competing in <strong>CTF</strong> cybersecurity competitions.
@@ -143,7 +142,7 @@
             <span class="stat-label" data-i18n="about.statSec">Information Security</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">5</span>
+            <span class="stat-num">4</span>
             <span class="stat-label" data-i18n="about.statCerts">Certifications</span>
           </div>
           <div class="stat-card">
@@ -160,11 +159,6 @@
   <section id="experience" class="section">
     <div class="container">
       <h2 class="section-title" data-i18n="exp.title">Experience</h2>
-      <div class="exp-filter">
-        <button class="filter-btn active" data-filter="all"      data-i18n="exp.filterAll">All</button>
-        <button class="filter-btn"        data-filter="academic" data-i18n="exp.filterAcademic">Academic</button>
-        <button class="filter-btn"        data-filter="industry" data-i18n="exp.filterIndustry">Industry</button>
-      </div>
 
       <div class="carousel-wrap">
         <button class="car-arrow car-prev" id="expPrev" aria-label="Previous experience" disabled>
@@ -173,52 +167,30 @@
         <div class="car-viewport">
           <div class="car-track" id="expTrack">
 
-        <div class="exp-card" data-exp-type="academic">
+        <div class="exp-card">
           <div class="exp-card-accent academic"></div>
           <div class="exp-card-body">
             <div class="exp-card-top">
-              <span class="exp-type-badge academic" data-i18n="exp.filterAcademic">Academic</span>
-              <span class="exp-date">May 2023 – Present</span>
+              <span class="exp-date">May 2023 – Aug 2026</span>
             </div>
             <h3 class="exp-role" data-i18n="exp.grad.title">Graduate Research Student</h3>
             <p class="exp-company">Concordia University · NSERC/Ericsson IRC in SDN/NFV Security</p>
             <ul class="exp-bullets">
-              <li data-i18n="exp.grad.b1">Developing and evaluating novel security solutions for SDN and NFV.</li>
-              <li data-i18n="exp.grad.b2">Contributing to the NSERC/Ericsson Industrial Research Chair in network security.</li>
-              <li data-i18n="exp.grad.b3">Researching next-generation security architectures for telecom and cloud-native systems.</li>
+              <li data-i18n="exp.grad.b1">Selected for a Mitacs Accelerate research internship (Sep–Dec 2023) with Ericsson.</li>
+              <li data-i18n="exp.grad.b2">Used Docker and Podman for testing cross-container vulnerabilities and exploits.</li>
+              <li data-i18n="exp.grad.b3">Used eBPF for detecting kernel attacks and building mitigation solutions.</li>
+              <li data-i18n="exp.grad.b4">Researching kernel and cross-container attacks.</li>
             </ul>
             <div class="tl-tags">
-              <span>SDN</span><span>NFV</span><span>Network Security</span><span>Research</span>
+              <span>Docker</span><span>Podman</span><span>eBPF</span><span>Kernel Security</span>
             </div>
           </div>
         </div>
 
-        <div class="exp-card" data-exp-type="academic">
-          <div class="exp-card-accent academic"></div>
-          <div class="exp-card-body">
-            <div class="exp-card-top">
-              <span class="exp-type-badge academic" data-i18n="exp.filterAcademic">Academic</span>
-              <span class="exp-date">Sep 2023 – Dec 2023</span>
-            </div>
-            <h3 class="exp-role" data-i18n="exp.mitacs.title">Mitacs Research Intern</h3>
-            <p class="exp-company">Ericsson</p>
-            <ul class="exp-bullets">
-              <li data-i18n="exp.mitacs.b1">Used Ansible as an automation tool for deployment of server tools and configuration.</li>
-              <li data-i18n="exp.mitacs.b2">Used Docker for testing vulnerabilities and exploits.</li>
-              <li data-i18n="exp.mitacs.b3">Used Kubernetes for app deployments and vulnerabilities research.</li>
-              <li data-i18n="exp.mitacs.b4">Researched Kernel and 5G vulnerabilities.</li>
-            </ul>
-            <div class="tl-tags">
-              <span>Ansible</span><span>Docker</span><span>Kubernetes</span><span>5G</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="exp-card" data-exp-type="industry">
+        <div class="exp-card">
           <div class="exp-card-accent industry"></div>
           <div class="exp-card-body">
             <div class="exp-card-top">
-              <span class="exp-type-badge industry" data-i18n="exp.filterIndustry">Industry</span>
               <span class="exp-date">May 2022 – Mar 2023</span>
             </div>
             <h3 class="exp-role" data-i18n="exp.devops.title">DevOps Engineer</h3>
@@ -235,11 +207,10 @@
           </div>
         </div>
 
-        <div class="exp-card" data-exp-type="industry">
+        <div class="exp-card">
           <div class="exp-card-accent industry"></div>
           <div class="exp-card-body">
             <div class="exp-card-top">
-              <span class="exp-type-badge industry" data-i18n="exp.filterIndustry">Industry</span>
               <span class="exp-date">Aug 2021 – Feb 2022</span>
             </div>
             <h3 class="exp-role" data-i18n="exp.epm.title">Intern — Energy Markets</h3>
@@ -257,11 +228,10 @@
           </div>
         </div>
 
-        <div class="exp-card" data-exp-type="academic">
+        <div class="exp-card">
           <div class="exp-card-accent academic"></div>
           <div class="exp-card-body">
             <div class="exp-card-top">
-              <span class="exp-type-badge academic" data-i18n="exp.filterAcademic">Academic</span>
               <span class="exp-date">Sep 2019 – Jun 2021</span>
             </div>
             <h3 class="exp-role" data-i18n="exp.ra.title">Research Assistant</h3>
@@ -295,6 +265,15 @@
       <h2 class="section-title" data-i18n="pub.title">Publications</h2>
 
       <div class="pub-card">
+        <div class="pub-venue-badge">M.A.Sc. Thesis</div>
+        <h3 class="pub-title">KubeBPF: eBPF-Based In-Kernel Machine Learning Approach for Detecting and Mitigating Abstract Resource Attacks for Containers</h3>
+        <p class="pub-authors"><strong>Tomás Navarro Múnera</strong></p>
+        <p class="pub-venue">M.A.Sc. Thesis, Concordia University — accepted, to be published in 2027.</p>
+        <p class="pub-venue">Journal/conference paper based on this thesis — venue and date TBA.</p>
+        <p class="pub-acceptance" data-i18n="pub.thesisStatus">Status: Thesis accepted · Paper TBA</p>
+      </div>
+
+      <div class="pub-card">
         <div class="pub-venue-badge">IEEE S&amp;P 2025</div>
         <h3 class="pub-title">CONnecting The EXtra doTS (CONTEXTS): Correlating External Information about Point of Interest for Attack Investigation</h3>
         <p class="pub-authors">Sareh Mohammadi, Hugo Kermabon-Bobinnec, Azadeh Tabiban, Lingyu Wang, <strong>Tomás Navarro Múnera</strong>, Yosr Jarraya.</p>
@@ -320,11 +299,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
           </div>
           <div class="edu-body">
-            <span class="edu-badge" data-i18n="edu.inProgress">In Progress</span>
+            <span class="edu-badge edu-badge-done" data-i18n="edu.graduated">Graduated</span>
             <h3 data-i18n="edu.mscTitle">Master of Science</h3>
             <p class="edu-field" data-i18n="edu.mscField">Computer &amp; Information Systems Security / Information Assurance</p>
             <p class="edu-school">Concordia University</p>
-            <p class="edu-date">May 2023 – December 2025</p>
+            <p class="edu-date">May 2023 – August 2026</p>
             <p class="edu-location">Montreal, Quebec, Canada</p>
           </div>
         </div>
@@ -468,28 +447,35 @@
         <div class="skill-group">
           <h4 data-i18n="skills.cloud">Cloud &amp; Infrastructure</h4>
           <div class="skill-chips">
-            <span>AWS</span><span>IaaS</span><span>Cloud Computing</span><span>Kubernetes</span><span>Docker</span>
+            <span>AWS</span><span>Terraform</span><span>Terragrunt</span><span>Ansible</span><span>Docker</span><span>Kubernetes</span><span>Vagrant</span><span class="featured">eBPF</span><span>Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 data-i18n="skills.backend">Back-end</h4>
+          <div class="skill-chips">
+            <span>Laravel</span><span>Django</span><span>REST API</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 data-i18n="skills.frontend">Front-end</h4>
+          <div class="skill-chips">
+            <span>Bootstrap</span><span>HTML5</span>
           </div>
         </div>
 
         <div class="skill-group">
           <h4 data-i18n="skills.programming">Programming Languages</h4>
           <div class="skill-chips">
-            <span>Python</span><span>Bash</span><span>SQL</span><span>JavaScript</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4 data-i18n="skills.frameworks">Frameworks &amp; Tools</h4>
-          <div class="skill-chips">
-            <span>Django</span><span>Linux</span><span>Git</span><span>CI/CD</span>
+            <span>Python</span><span>Java</span><span>C++</span><span>C</span><span>PHP</span><span>R</span><span>Matlab</span><span>LaTeX</span><span>GTK3</span><span>Bash</span><span>SQL</span><span>JavaScript</span>
           </div>
         </div>
 
         <div class="skill-group">
           <h4 data-i18n="skills.security">Cyber Security &amp; Research</h4>
           <div class="skill-chips">
-            <span>SDN/NFV Security</span><span>Network Security</span><span>Ethical Hacking</span><span>Forensic Computing</span>
+            <span class="featured">eBPF</span><span>SDN/NFV Security</span><span>Network Security</span><span>Kernel Security</span><span>Ethical Hacking</span><span>Forensic Computing</span>
           </div>
         </div>
 
@@ -532,9 +518,9 @@
           <div class="lang-details">
             <div class="lang-top">
               <span class="lang-name">Français</span>
-              <span class="lang-badge intermediate" data-i18n="languages.intermediateBadge">Intermediate · B1</span>
+              <span class="lang-badge basic" data-i18n="languages.basicBadge">Basic</span>
             </div>
-            <div class="lang-bar"><div class="lang-fill" style="--fill:55%"></div></div>
+            <div class="lang-bar"><div class="lang-fill" style="--fill:30%"></div></div>
           </div>
         </div>
 
@@ -553,8 +539,19 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
           </div>
           <div class="cert-body">
-            <p class="cert-name">Ultimate AWS Certified Cloud Practitioner</p>
-            <p class="cert-meta">2023</p>
+            <p class="cert-name">Cloud and DevOps Fundamentals — Cloud and Automation tools</p>
+            <p class="cert-meta">EPAM Learning · Apr. 2025</p>
+          </div>
+          <span class="cert-tag">Cloud</span>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-icon-wrap cert-cloud">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <div class="cert-body">
+            <p class="cert-name">AWS Certified Cloud Practitioner</p>
+            <p class="cert-meta">Amazon Web Services · May. 2023</p>
           </div>
           <span class="cert-tag">Cloud</span>
         </div>
@@ -564,32 +561,10 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div class="cert-body">
-            <p class="cert-name">Complete Ethical Hacking Bootcamp: Zero to Mastery</p>
-            <p class="cert-meta">2022</p>
+            <p class="cert-name">Complete Ethical Hacking Bootcamp 2022: Zero to Mastery</p>
+            <p class="cert-meta">Udemy · Jun. 2022</p>
           </div>
           <span class="cert-tag">Security</span>
-        </div>
-
-        <div class="cert-item">
-          <div class="cert-icon-wrap cert-linux">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          </div>
-          <div class="cert-body">
-            <p class="cert-name">Administración de Servidores Linux</p>
-            <p class="cert-meta">Linux Administration</p>
-          </div>
-          <span class="cert-tag">Linux</span>
-        </div>
-
-        <div class="cert-item">
-          <div class="cert-icon-wrap cert-python">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </div>
-          <div class="cert-body">
-            <p class="cert-name">Desarrollo Backend con Python y Django</p>
-            <p class="cert-meta">Backend Development</p>
-          </div>
-          <span class="cert-tag">Python</span>
         </div>
 
         <div class="cert-item">
@@ -597,10 +572,10 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
           </div>
           <div class="cert-body">
-            <p class="cert-name">Kubernetes for the Absolute Beginners — Hands On</p>
-            <p class="cert-meta">Container Orchestration</p>
+            <p class="cert-name">DevOps in the Cloud with Terraform, Ansible, and Jenkins</p>
+            <p class="cert-meta">Udemy · Jun. 2022</p>
           </div>
-          <span class="cert-tag">K8s</span>
+          <span class="cert-tag">DevOps</span>
         </div>
 
       </div>

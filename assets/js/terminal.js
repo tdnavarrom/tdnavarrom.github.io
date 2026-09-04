@@ -12,7 +12,7 @@ const lines = [
   { type: 'cmd', text: 'echo $FOCUS' },
   { type: 'out', text: 'SDN/NFV Security · AWS · DevOps' },
   { type: 'cmd', text: 'ls skills/' },
-  { type: 'out', text: 'python/  aws/  kubernetes/  linux/  django/' },
+  { type: 'out', text: 'python/  aws/  kubernetes/  ebpf/  linux/  django/' },
 ];
 
 const terminalBody = document.getElementById('terminalBody');
