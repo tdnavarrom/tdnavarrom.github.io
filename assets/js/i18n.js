@@ -13,9 +13,9 @@ function getVal(obj, path) {
 // Maps each language to its compiled CV PDF, published by the
 // TomasNavarro_CV repo's build-and-publish workflow.
 const cvByLang = {
-  en: 'assets/cv/cv.pdf',
-  es: 'assets/cv/cv_es.pdf',
-  fr: 'assets/cv/cv_fr.pdf',
+  en: 'assets/cv/TomasNavarro_CV_en.pdf',
+  es: 'assets/cv/TomasNavarro_CV_es.pdf',
+  fr: 'assets/cv/TomasNavarro_CV_fr.pdf',
 };
 
 // Swaps all translatable text on the page to the given language code.
@@ -28,7 +28,10 @@ function applyLang(lang) {
 
   // Point the CV download button at the PDF matching the selected language
   const cvLink = document.getElementById('cv-download-link');
-  if (cvLink && cvByLang[lang]) cvLink.href = cvByLang[lang];
+  if (cvLink && cvByLang[lang]) {
+    cvLink.href = cvByLang[lang];
+    cvLink.setAttribute('download', cvByLang[lang].split('/').pop());
+  }
 
   // Plain-text replacements
   document.querySelectorAll('[data-i18n]').forEach(el => {

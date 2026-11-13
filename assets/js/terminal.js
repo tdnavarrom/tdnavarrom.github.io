@@ -8,7 +8,7 @@ const lines = [
   { type: 'cmd', text: 'whoami' },
   { type: 'out', text: 'tomas-navarro' },
   { type: 'cmd', text: 'cat role.txt' },
-  { type: 'out', text: 'Security Researcher & Cloud Engineer' },
+  { type: 'out', text: 'Security Researcher & DevOps Engineer' },
   { type: 'cmd', text: 'echo $FOCUS' },
   { type: 'out', text: 'SDN/NFV Security · AWS · DevOps' },
   { type: 'cmd', text: 'ls skills/' },

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tomás Navarro — Cloud Engineer & Cyber Security Researcher</title>
+  <title>Tomás Navarro — Security Researcher & DevOps Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -84,12 +84,12 @@
         Navarro Múnera
       </h1>
       <p class="hero-subtitle" data-i18n-html="hero.subtitle">
-        Devops Engineer &nbsp;·&nbsp; Security Researcher
+        Security Researcher &nbsp;·&nbsp; DevOps Engineer
       </p>
       <div class="hero-actions">
         <a href="#contact"    class="btn-primary"   data-i18n="hero.cta1">Get in touch</a>
         <a href="#experience" class="btn-secondary"  data-i18n="hero.cta2">View experience</a>
-        <a href="assets/cv/cv.pdf" download id="cv-download-link" class="btn-cv" data-i18n="hero.cv">
+        <a href="assets/cv/TomasNavarro_CV_en.pdf" download="TomasNavarro_CV_en.pdf" id="cv-download-link" class="btn-cv" data-i18n="hero.cv">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download CV
         </a>
@@ -142,7 +142,7 @@
             <span class="stat-label" data-i18n="about.statSec">Information Security</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">4</span>
+            <span class="stat-num">5</span>
             <span class="stat-label" data-i18n="about.statCerts">Certifications</span>
           </div>
           <div class="stat-card">
@@ -174,15 +174,17 @@
               <span class="exp-date">May 2023 – Aug 2026</span>
             </div>
             <h3 class="exp-role" data-i18n="exp.grad.title">Graduate Research Student</h3>
-            <p class="exp-company">Concordia University · NSERC/Ericsson IRC in SDN/NFV Security</p>
+            <p class="exp-company">Concordia University · NSERC/Ericsson IRC in SDN/NFV Security · <span data-i18n="exp.hybrid">Hybrid</span></p>
             <ul class="exp-bullets">
               <li data-i18n="exp.grad.b1">Selected for a Mitacs Accelerate research internship (Sep–Dec 2023) with Ericsson.</li>
-              <li data-i18n="exp.grad.b2">Used Docker and Podman for testing cross-container vulnerabilities and exploits.</li>
-              <li data-i18n="exp.grad.b3">Used eBPF for detecting kernel attacks and building mitigation solutions.</li>
-              <li data-i18n="exp.grad.b4">Researching kernel and cross-container attacks.</li>
+              <li data-i18n="exp.grad.b2">Designed and executed resource-exhaustion attacks (fork bombs, futex floods, file-descriptor exhaustion) against containerized workloads using stress-ng and custom tooling.</li>
+              <li data-i18n="exp.grad.b3">Used Docker and Podman for testing cross-container vulnerabilities and exploits.</li>
+              <li data-i18n="exp.grad.b4">Used eBPF for detecting kernel attacks and building mitigation solutions.</li>
+              <li data-i18n="exp.grad.b5">Researched and authored a thesis (KubeBPF) on in-kernel machine learning detection and mitigation of cross-container and kernel resource-exhaustion attacks.</li>
+              <li data-i18n="exp.grad.b6">Co-authored CONTEXTS, a provenance-graph attack investigation paper accepted at IEEE S&amp;P 2025.</li>
             </ul>
             <div class="tl-tags">
-              <span>Docker</span><span>Podman</span><span>eBPF</span><span>Kernel Security</span>
+              <span>eBPF</span><span>Docker</span><span>Podman</span><span>stress-ng</span><span>Kernel Security</span><span>Machine Learning</span>
             </div>
           </div>
         </div>
@@ -194,15 +196,14 @@
               <span class="exp-date">May 2022 – Mar 2023</span>
             </div>
             <h3 class="exp-role" data-i18n="exp.devops.title">DevOps Engineer</h3>
-            <p class="exp-company">Pyxis</p>
+            <p class="exp-company">Pyxis SAS · Medellín, Colombia</p>
             <ul class="exp-bullets">
-              <li data-i18n="exp.devops.b1">Used Terraform and Terragrunt for IaaC construction and deployment in AWS.</li>
-              <li data-i18n="exp.devops.b2">Used Ansible as an automation tool for deployment of server tools and configuration.</li>
-              <li data-i18n="exp.devops.b3">AWS Networking and Configuration for High Availability and High Scalability.</li>
-              <li data-i18n="exp.devops.b4">Used Docker for environmental configuration and deployment of applications in AWS.</li>
+              <li data-i18n="exp.devops.b1">Built AWS infrastructure-as-code with Terraform and Terragrunt for a card payment processing client, provisioning RDS, EBS, and Auto Scaling Groups behind Network Load Balancers for high availability and scalability of regulated financial workloads.</li>
+              <li data-i18n="exp.devops.b2">Automated deployment and server configuration with Ansible and Docker for a cryptocurrency exchange client, supporting secure, highly available production environments.</li>
+              <li data-i18n="exp.devops.b3">Configured AWS Security Groups and CloudWatch monitoring for network security and observability across both client engagements.</li>
             </ul>
             <div class="tl-tags">
-              <span>AWS</span><span>Terraform</span><span>Ansible</span><span>Docker</span>
+              <span>AWS</span><span>Terraform</span><span>Terragrunt</span><span>Ansible</span><span>Docker</span><span>CloudWatch</span>
             </div>
           </div>
         </div>
@@ -213,17 +214,16 @@
             <div class="exp-card-top">
               <span class="exp-date">Aug 2021 – Feb 2022</span>
             </div>
-            <h3 class="exp-role" data-i18n="exp.epm.title">Intern — Energy Markets</h3>
-            <p class="exp-company">Empresas Públicas de Medellín (EPM) · Área Gestión Bolsa de Energía</p>
+            <h3 class="exp-role" data-i18n="exp.epm.title">Data Scientist Intern</h3>
+            <p class="exp-company">Empresas Públicas de Medellín (EPM) · Medellín, Colombia</p>
             <ul class="exp-bullets">
-              <li data-i18n="exp.epm.b1">Used Data Science programming languages: Python, Matlab, and R.</li>
-              <li data-i18n="exp.epm.b2">Built Machine Learning Models for hydrological forecasting.</li>
-              <li data-i18n="exp.epm.b3">Performed data analysis of model results.</li>
-              <li data-i18n="exp.epm.b4">Built a web scraping tool to extract data from XM.com.co.</li>
-              <li data-i18n="exp.epm.b5">Built an API connector tool to fetch and analyse data from XM.com.co.</li>
+              <li data-i18n="exp.epm.b1">Built machine learning models in Python, Matlab, and R for hydrological forecasting.</li>
+              <li data-i18n="exp.epm.b2">Analyzed model outputs to assess forecasting accuracy and guide improvements.</li>
+              <li data-i18n="exp.epm.b3">Developed a web-scraping tool to extract hydrological data from XM.com.co.</li>
+              <li data-i18n="exp.epm.b4">Built an API connector to retrieve data from XM.com.co for analysis.</li>
             </ul>
             <div class="tl-tags">
-              <span>Python</span><span>Matlab</span><span>Machine Learning</span><span>Data Analysis</span>
+              <span>Python</span><span>Matlab</span><span>R</span><span>Machine Learning</span><span>Data Analysis</span>
             </div>
           </div>
         </div>
@@ -235,16 +235,16 @@
               <span class="exp-date">Sep 2019 – Jun 2021</span>
             </div>
             <h3 class="exp-role" data-i18n="exp.ra.title">Research Assistant</h3>
-            <p class="exp-company">Universidad EAFIT · Apolo Scientific Computing Center</p>
+            <p class="exp-company">Universidad EAFIT · Apolo Supercomputing Center</p>
             <ul class="exp-bullets">
-              <li data-i18n="exp.ra.b1">Linux System Admin — reviewed packages for vulnerabilities.</li>
-              <li data-i18n="exp.ra.b2">Deployed private web apps in Docker to secure the cluster.</li>
-              <li data-i18n="exp.ra.b3">Created "LMOD module generator" script for app usage [Bash].</li>
-              <li data-i18n="exp.ra.b4">Used Ansible and Vagrant for deployment of server tools and configuration.</li>
-              <li data-i18n="exp.ra.b5">Installed HPC applications for cluster users.</li>
+              <li data-i18n="exp.ra.b1">Administered Linux systems for the Apolo HPC cluster, auditing packages for security vulnerabilities.</li>
+              <li data-i18n="exp.ra.b2">Deployed private web applications in Docker to harden the cluster's security posture.</li>
+              <li data-i18n="exp.ra.b3">Built a Bash-based "LMOD module generator" to streamline application module creation for cluster users.</li>
+              <li data-i18n="exp.ra.b4">Automated server provisioning and configuration with Ansible and Vagrant.</li>
+              <li data-i18n="exp.ra.b5">Installed and maintained HPC applications for researchers, companies, and students using the cluster.</li>
             </ul>
             <div class="tl-tags">
-              <span>Linux</span><span>Docker</span><span>Ansible</span><span>HPC</span><span>Bash</span>
+              <span>Linux</span><span>Docker</span><span>Ansible</span><span>Vagrant</span><span>HPC</span><span>Bash</span>
             </div>
           </div>
         </div>
@@ -275,7 +275,7 @@
 
       <div class="pub-card">
         <div class="pub-venue-badge">IEEE S&amp;P 2025</div>
-        <h3 class="pub-title">CONnecting The EXtra doTS (CONTEXTS): Correlating External Information about Point of Interest for Attack Investigation</h3>
+        <h3 class="pub-title">CONnecting The EXtra doTS (CONTEXTS): Correlating External Information about Points of Interest for Attack Investigation</h3>
         <p class="pub-authors">Sareh Mohammadi, Hugo Kermabon-Bobinnec, Azadeh Tabiban, Lingyu Wang, <strong>Tomás Navarro Múnera</strong>, Yosr Jarraya.</p>
         <p class="pub-venue">Proc. the 45th IEEE Symposium on Security and Privacy (IEEE S&amp;P 2025), San Francisco, USA, May 12–15, 2025.</p>
         <p class="pub-acceptance" data-i18n="pub.acceptance">Acceptance ratio: 257 / 1740 ≈ 14.8%</p>
@@ -300,8 +300,8 @@
           </div>
           <div class="edu-body">
             <span class="edu-badge edu-badge-done" data-i18n="edu.graduated">Graduated</span>
-            <h3 data-i18n="edu.mscTitle">Master of Science</h3>
-            <p class="edu-field" data-i18n="edu.mscField">Computer &amp; Information Systems Security / Information Assurance</p>
+            <h3 data-i18n="edu.mscTitle">Master of Applied Science (M.A.Sc.)</h3>
+            <p class="edu-field" data-i18n="edu.mscField">Information System Security</p>
             <p class="edu-school">Concordia University</p>
             <p class="edu-date">May 2023 – August 2026</p>
             <p class="edu-location">Montreal, Quebec, Canada</p>
@@ -314,8 +314,8 @@
           </div>
           <div class="edu-body">
             <span class="edu-badge edu-badge-done" data-i18n="edu.graduated">Graduated</span>
-            <h3 data-i18n="edu.bsTitle">Bachelor's Degree</h3>
-            <p class="edu-field" data-i18n="edu.bsField">Computer Science</p>
+            <h3 data-i18n="edu.bsTitle">Bachelor of Science (B.S.)</h3>
+            <p class="edu-field" data-i18n="edu.bsField">Computer Science and Engineering · GPA 4.28/5</p>
             <p class="edu-school">Universidad EAFIT</p>
             <p class="edu-date">January 2018 – December 2022</p>
             <p class="edu-location">Medellín, Antioquia, Colombia</p>
@@ -445,9 +445,9 @@
       <div class="skills-grid">
 
         <div class="skill-group">
-          <h4 data-i18n="skills.cloud">Cloud &amp; Infrastructure</h4>
+          <h4 data-i18n="skills.cloud">DevOps</h4>
           <div class="skill-chips">
-            <span>AWS</span><span>Terraform</span><span>Terragrunt</span><span>Ansible</span><span>Docker</span><span>Kubernetes</span><span>Vagrant</span><span class="featured">eBPF</span><span>Linux</span>
+            <span>AWS</span><span>Docker</span><span>Vagrant</span><span>Linux</span><span class="featured">eBPF</span><span>Ansible</span><span>Kubernetes</span><span>Terraform</span><span>Terragrunt</span>
           </div>
         </div>
 
@@ -466,16 +466,16 @@
         </div>
 
         <div class="skill-group">
-          <h4 data-i18n="skills.programming">Programming Languages</h4>
+          <h4 data-i18n="skills.programming">Programming</h4>
           <div class="skill-chips">
-            <span>Python</span><span>Java</span><span>C++</span><span>C</span><span>PHP</span><span>R</span><span>Matlab</span><span>LaTeX</span><span>GTK3</span><span>Bash</span><span>SQL</span><span>JavaScript</span>
+            <span>Python</span><span>Java</span><span>LaTeX</span><span>C++</span><span>C</span><span>PHP</span><span>R</span><span>Matlab</span><span>GTK3</span><span>Bash</span><span>SQL</span><span>JavaScript</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h4 data-i18n="skills.security">Cyber Security &amp; Research</h4>
+          <h4 data-i18n="skills.security">Security</h4>
           <div class="skill-chips">
-            <span class="featured">eBPF</span><span>SDN/NFV Security</span><span>Network Security</span><span>Kernel Security</span><span>Ethical Hacking</span><span>Forensic Computing</span>
+            <span class="featured">Penetration Testing</span><span>Vulnerability Research</span><span>Kernel Exploitation</span><span>Nmap</span><span>Metasploit</span><span>Nessus</span><span>Aircrack-ng</span>
           </div>
         </div>
 
