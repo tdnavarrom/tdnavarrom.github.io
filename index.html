@@ -143,7 +143,7 @@
           </div>
           <div class="stat-card">
             <span class="stat-num">5</span>
-            <span class="stat-label" data-i18n="about.statCerts">Certifications</span>
+            <span class="stat-label" data-i18n="about.statCerts">Certs &amp; Courses</span>
           </div>
           <div class="stat-card">
             <span class="stat-num">🏆</span>
@@ -160,21 +160,18 @@
     <div class="container">
       <h2 class="section-title" data-i18n="exp.title">Experience</h2>
 
-      <div class="carousel-wrap">
-        <button class="car-arrow car-prev" id="expPrev" aria-label="Previous experience" disabled>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <div class="car-viewport">
-          <div class="car-track" id="expTrack">
+      <div class="timeline">
 
-        <div class="exp-card">
-          <div class="exp-card-accent academic"></div>
-          <div class="exp-card-body">
-            <div class="exp-card-top">
-              <span class="exp-date">May 2023 – Aug 2026</span>
+        <div class="timeline-item">
+          <div class="timeline-marker academic"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="exp-role" data-i18n="exp.grad.title">Graduate Research Student</h3>
+                <p class="tl-company">Concordia University · <a href="https://arc.encs.concordia.ca/" target="_blank" rel="noopener">NSERC/Ericsson IRC in SDN/NFV Security</a> · <span data-i18n="exp.hybrid">Hybrid</span></p>
+              </div>
+              <span class="tl-date">May 2023 – Aug 2026</span>
             </div>
-            <h3 class="exp-role" data-i18n="exp.grad.title">Graduate Research Student</h3>
-            <p class="exp-company">Concordia University · NSERC/Ericsson IRC in SDN/NFV Security · <span data-i18n="exp.hybrid">Hybrid</span></p>
             <ul class="exp-bullets">
               <li data-i18n="exp.grad.b1">Selected for a Mitacs Accelerate research internship (Sep–Dec 2023) with Ericsson.</li>
               <li data-i18n="exp.grad.b2">Designed and executed resource-exhaustion attacks (fork bombs, futex floods, file-descriptor exhaustion) against containerized workloads using stress-ng and custom tooling.</li>
@@ -189,14 +186,16 @@
           </div>
         </div>
 
-        <div class="exp-card">
-          <div class="exp-card-accent industry"></div>
-          <div class="exp-card-body">
-            <div class="exp-card-top">
-              <span class="exp-date">May 2022 – Mar 2023</span>
+        <div class="timeline-item">
+          <div class="timeline-marker industry"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="exp-role" data-i18n="exp.devops.title">DevOps Engineer</h3>
+                <p class="tl-company">Pyxis SAS · Medellín, Colombia</p>
+              </div>
+              <span class="tl-date">May 2022 – Mar 2023</span>
             </div>
-            <h3 class="exp-role" data-i18n="exp.devops.title">DevOps Engineer</h3>
-            <p class="exp-company">Pyxis SAS · Medellín, Colombia</p>
             <ul class="exp-bullets">
               <li data-i18n="exp.devops.b1">Built AWS infrastructure-as-code with Terraform and Terragrunt for a card payment processing client, provisioning RDS, EBS, and Auto Scaling Groups behind Network Load Balancers for high availability and scalability of regulated financial workloads.</li>
               <li data-i18n="exp.devops.b2">Automated deployment and server configuration with Ansible and Docker for a cryptocurrency exchange client, supporting secure, highly available production environments.</li>
@@ -208,14 +207,16 @@
           </div>
         </div>
 
-        <div class="exp-card">
-          <div class="exp-card-accent industry"></div>
-          <div class="exp-card-body">
-            <div class="exp-card-top">
-              <span class="exp-date">Aug 2021 – Feb 2022</span>
+        <div class="timeline-item">
+          <div class="timeline-marker industry"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="exp-role" data-i18n="exp.epm.title">Data Scientist Intern</h3>
+                <p class="tl-company">Empresas Públicas de Medellín (EPM) · Medellín, Colombia</p>
+              </div>
+              <span class="tl-date">Aug 2021 – Feb 2022</span>
             </div>
-            <h3 class="exp-role" data-i18n="exp.epm.title">Data Scientist Intern</h3>
-            <p class="exp-company">Empresas Públicas de Medellín (EPM) · Medellín, Colombia</p>
             <ul class="exp-bullets">
               <li data-i18n="exp.epm.b1">Built machine learning models in Python, Matlab, and R for hydrological forecasting.</li>
               <li data-i18n="exp.epm.b2">Analyzed model outputs to assess forecasting accuracy and guide improvements.</li>
@@ -228,14 +229,16 @@
           </div>
         </div>
 
-        <div class="exp-card">
-          <div class="exp-card-accent academic"></div>
-          <div class="exp-card-body">
-            <div class="exp-card-top">
-              <span class="exp-date">Sep 2019 – Jun 2021</span>
+        <div class="timeline-item">
+          <div class="timeline-marker academic"></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="exp-role" data-i18n="exp.ra.title">Research Assistant</h3>
+                <p class="tl-company">Universidad EAFIT · Apolo Supercomputing Center</p>
+              </div>
+              <span class="tl-date">Sep 2019 – Jun 2021</span>
             </div>
-            <h3 class="exp-role" data-i18n="exp.ra.title">Research Assistant</h3>
-            <p class="exp-company">Universidad EAFIT · Apolo Supercomputing Center</p>
             <ul class="exp-bullets">
               <li data-i18n="exp.ra.b1">Administered Linux systems for the Apolo HPC cluster, auditing packages for security vulnerabilities.</li>
               <li data-i18n="exp.ra.b2">Deployed private web applications in Docker to harden the cluster's security posture.</li>
@@ -249,12 +252,7 @@
           </div>
         </div>
 
-          </div><!-- /.car-track -->
-        </div><!-- /.car-viewport -->
-        <button class="car-arrow car-next" id="expNext" aria-label="Next experience">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-      </div><!-- /.carousel-wrap -->
+      </div><!-- /.timeline -->
 
     </div>
   </section>
@@ -271,6 +269,12 @@
         <p class="pub-venue">M.A.Sc. Thesis, Concordia University — accepted, to be published in 2027.</p>
         <p class="pub-venue">Journal/conference paper based on this thesis — venue and date TBA.</p>
         <p class="pub-acceptance" data-i18n="pub.thesisStatus">Status: Thesis accepted · Paper TBA</p>
+        <div class="pub-links">
+          <a class="pub-link" href="https://arc.encs.concordia.ca/" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            ARC Lab
+          </a>
+        </div>
       </div>
 
       <div class="pub-card">
@@ -279,10 +283,20 @@
         <p class="pub-authors">Sareh Mohammadi, Hugo Kermabon-Bobinnec, Azadeh Tabiban, Lingyu Wang, <strong>Tomás Navarro Múnera</strong>, Yosr Jarraya.</p>
         <p class="pub-venue">Proc. the 45th IEEE Symposium on Security and Privacy (IEEE S&amp;P 2025), San Francisco, USA, May 12–15, 2025.</p>
         <p class="pub-acceptance" data-i18n="pub.acceptance">Acceptance ratio: 257 / 1740 ≈ 14.8%</p>
-        <a class="pub-link" href="https://ieeexplore.ieee.org/document/11023372" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          IEEE Xplore
-        </a>
+        <div class="pub-links">
+          <a class="pub-link" href="https://ieeexplore.ieee.org/document/11023372" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            IEEE Xplore
+          </a>
+          <a class="pub-link" href="assets/papers/mohammadi2025sp.pdf" download>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            PDF
+          </a>
+          <a class="pub-link" href="https://arc.encs.concordia.ca/" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            ARC Lab
+          </a>
+        </div>
       </div>
 
     </div>
@@ -531,7 +545,33 @@
   <!-- CERTIFICATIONS -->
   <section id="certifications" class="section section-alt">
     <div class="container">
-      <h2 class="section-title" data-i18n="certs.title">Certifications</h2>
+      <h2 class="section-title" data-i18n="certs.title">Certifications &amp; Training</h2>
+      <div class="cert-tabs" role="group" aria-label="Filter certifications and courses">
+        <button class="cert-tab active" data-filter="all" aria-pressed="true"><span data-i18n="certs.all">All</span> <span class="cert-count">5</span></button>
+        <button class="cert-tab" data-filter="cert" aria-pressed="false"><span data-i18n="certs.certified">Certifications</span> <span class="cert-count">1</span></button>
+        <button class="cert-tab" data-filter="course" aria-pressed="false"><span data-i18n="certs.courses">Courses &amp; Training</span> <span class="cert-count">4</span></button>
+      </div>
+
+      <div class="cert-group" data-group="cert">
+      <h3 class="cert-group-title" data-i18n="certs.certified">Certifications</h3>
+      <div class="cert-list">
+
+        <div class="cert-item">
+          <div class="cert-icon-wrap cert-cloud">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <div class="cert-body">
+            <p class="cert-name">AWS Certified Cloud Practitioner</p>
+            <p class="cert-meta">Amazon Web Services · May. 2023</p>
+          </div>
+          <span class="cert-tag">Cloud</span>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="cert-group" data-group="course">
+      <h3 class="cert-group-title" data-i18n="certs.courses">Courses &amp; Training</h3>
       <div class="cert-list">
 
         <div class="cert-item">
@@ -552,17 +592,6 @@
           <div class="cert-body">
             <p class="cert-name">Cloud and DevOps Fundamentals — Cloud and Automation tools</p>
             <p class="cert-meta">EPAM Learning · Apr. 2025</p>
-          </div>
-          <span class="cert-tag">Cloud</span>
-        </div>
-
-        <div class="cert-item">
-          <div class="cert-icon-wrap cert-cloud">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-          </div>
-          <div class="cert-body">
-            <p class="cert-name">AWS Certified Cloud Practitioner</p>
-            <p class="cert-meta">Amazon Web Services · May. 2023</p>
           </div>
           <span class="cert-tag">Cloud</span>
         </div>
@@ -589,6 +618,7 @@
           <span class="cert-tag">DevOps</span>
         </div>
 
+      </div>
       </div>
     </div>
   </section>
@@ -646,8 +676,8 @@
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/terminal.js"></script>
-  <script src="assets/js/experience.js"></script>
   <script src="assets/js/extracurricular.js"></script>
+  <script src="assets/js/certs.js"></script>
   <script src="assets/js/translations.js"></script>
   <script src="assets/js/i18n.js"></script>
 </body>

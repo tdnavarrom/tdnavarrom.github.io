@@ -788,3 +788,69 @@
   border-radius: 4px;
   white-space: nowrap;
 }
+
+/* Experience timeline: marker colour by type, tighter bullets */
+.timeline-marker.industry { border-color: var(--green); }
+.timeline-item:hover .timeline-marker.industry { background: var(--green); }
+.timeline .exp-role { margin-bottom: 0; }
+.timeline .tl-company { margin-bottom: 0; }
+
+/* Space between stacked publication cards */
+.pub-card + .pub-card { margin-top: 1.5rem; }
+
+/* Row of publication links */
+.pub-links { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+
+/* Linked lab name in experience company line */
+.tl-company a { color: inherit; text-decoration: underline; text-decoration-color: var(--accent-dim); text-underline-offset: 2px; }
+.tl-company a:hover { text-decoration-color: currentColor; }
+
+/* Sub-group headings inside Certifications & Training */
+.cert-group-title {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+}
+
+/* Tab filter: All / Certifications / Courses */
+.cert-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+.cert-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+.cert-tab:hover { border-color: var(--accent); color: var(--text); }
+.cert-tab.active {
+  color: var(--accent);
+  background: var(--accent-glow);
+  border-color: var(--accent);
+}
+.cert-count {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+.cert-tab.active .cert-count { color: var(--accent); }
+
+.cert-group[hidden] { display: none; }
+/* Spacing between the two groups when both are visible */
+.cert-group + .cert-group:not([hidden]) { margin-top: 2rem; }

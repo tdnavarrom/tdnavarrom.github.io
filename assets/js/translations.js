@@ -43,7 +43,7 @@ const translations = {
       p2: "I love <strong>traveling</strong> and learning about new cultures and languages — especially escaping to <strong>Argentina</strong> and <strong>Brazil</strong>. I also enjoy playing <strong>guitar</strong>, following football and combat sports, hiking, and competing in <strong>CTF</strong> cybersecurity competitions.",
       statExp: 'Years of experience',
       statSec: 'Information Security',
-      statCerts: 'Certificates',
+      statCerts: 'Certs & Courses',
       statAward: 'Premio Desarrollo de Software'
     },
     hobbies: {
@@ -99,7 +99,7 @@ const translations = {
       title: 'Languages',
       nativeBadge: 'Native', fluentBadge: 'Fluent · C1', intermediateBadge: 'Intermediate · B1', basicBadge: 'Basic'
     },
-    certs: { title: 'Certificates' },
+    certs: { title: 'Certifications & Training', all: 'All', certified: 'Certifications', courses: 'Courses & Training' },
     contact: {
       title: 'Get in Touch',
       sub: "Whether it's a research collaboration, job opportunity, or just to say hello — my inbox is open."
@@ -144,7 +144,7 @@ const translations = {
       p2: 'Me encanta <strong>viajar</strong> y aprender sobre nuevas culturas e idiomas — especialmente escaparme a <strong>Argentina</strong> y <strong>Brasil</strong>. También disfruto tocar <strong>guitarra</strong>, seguir el fútbol y los deportes de combate, hacer senderismo y competir en <strong>CTF</strong> de ciberseguridad.',
       statExp: 'Años de experiencia',
       statSec: 'Seguridad Informática',
-      statCerts: 'Certificaciones',
+      statCerts: 'Certs. y cursos',
       statAward: 'Premio Desarrollo de Software'
     },
     hobbies: {
@@ -200,7 +200,7 @@ const translations = {
       title: 'Idiomas',
       nativeBadge: 'Nativo', fluentBadge: 'Fluido · C1', intermediateBadge: 'Intermedio · B1', basicBadge: 'Básico'
     },
-    certs: { title: 'Certificados' },
+    certs: { title: 'Certificaciones y formación', all: 'Todos', certified: 'Certificaciones', courses: 'Cursos y formación' },
     contact: {
       title: '¡Hablemos, parce!',
       sub: 'Si querés hablar de investigación, oportunidades laborales o simplemente saludar — mi bandeja está abierta.'
@@ -245,7 +245,7 @@ const translations = {
       p2: "J'adore <strong>voyager</strong> et découvrir de nouvelles cultures et langues — surtout m'évader en <strong>Argentine</strong> et au <strong>Brésil</strong>. J'aime aussi jouer de la <strong>guitare</strong>, suivre le football et les sports de combat, randonner, et participer à des <strong>CTF</strong> en cybersécurité.",
       statExp: "Années d'expérience",
       statSec: "Sécurité de l'Information",
-      statCerts: 'Certificats',
+      statCerts: 'Certifs & cours',
       statAward: 'Premio Desarrollo de Software'
     },
     hobbies: {
@@ -301,7 +301,7 @@ const translations = {
       title: 'Langues',
       nativeBadge: 'Natif', fluentBadge: 'Courant · C1', intermediateBadge: 'Intermédiaire · B1', basicBadge: 'Notions de base'
     },
-    certs: { title: 'Certificats' },
+    certs: { title: 'Certifications et formations', all: 'Tous', certified: 'Certifications', courses: 'Cours et formations' },
     contact: {
       title: 'Contactez-moi',
       sub: 'Que ce soit pour une collaboration de recherche, une opportunité professionnelle, ou simplement pour dire bonjour — ma boîte mail est ouverte.'
